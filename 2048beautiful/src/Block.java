@@ -29,10 +29,10 @@ public class Block extends JLabel {
 			}
 		}
 		String text = starNames[indexStar];
-		if (value != 0)
-			setText(text);
-		else
-			setText("");
+//		if (value != 0)
+//			setText(text);
+//		else
+//			setText("");
 		setColor();
 	}
 
@@ -45,13 +45,14 @@ public class Block extends JLabel {
 	 * */
 	
 	public void setColor() {
-		ImageIcon img = new ImageIcon("res/drawable/hx.jgp");
+		ImageIcon img = null;
 		if (this.value == 0){
-			img = new ImageIcon("res/drawable/hx.jgp");
+			//img = new ImageIcon("res/drawable/hx.jgp");
+			this.setIcon(img);
 			setBackground(Color.gray);
 		}
 		else if (this.value == 2){
-			//img = new ImageIcon("res/drawable/gyy.jpg");
+			img = new ImageIcon("res/drawable/gyy.jpg");
 			setBackground(new Color(238, 228, 218));
 		}
 		else if (this.value == 4){
@@ -70,22 +71,45 @@ public class Block extends JLabel {
 			img = new ImageIcon("res/drawable/lyf.jpg");
 			setBackground(new Color(248, 149, 90));
 		}
-		else if (this.value == 64)
+		else if (this.value == 64){
+			img = new ImageIcon("res/drawable/zhm.jpg");
 			setBackground(new Color(249, 94, 50));
-		else if (this.value == 128)
+		}
+		else if (this.value == 128){
+			img = new ImageIcon("res/drawable/bbh.jpg");
 			setBackground(new Color(239, 207, 108));
-		else if (this.value == 256)
+		}
+		else if (this.value == 256){
+			img = new ImageIcon("res/drawable/hsy.jpg");
 			setBackground(new Color(239, 207, 99));
-		else if (this.value == 512)
+		}
+		else if (this.value == 512){
+			img = new ImageIcon("res/drawable/ym.jpg");
 			setBackground(new Color(239, 203, 82));
-		else if (this.value == 1024)
+		}
+		else if (this.value == 1024){
+			img = new ImageIcon("res/drawable/wzx.jpg");
 			setBackground(new Color(239, 199, 57));
-		else if (this.value == 2048)
+		}
+		else if (this.value == 2048){
+			img = new ImageIcon("res/drawable/lxr.jpg");
 			setBackground(new Color(239, 195, 41));
-		else if (this.value == 4096)
+		}
+		else if (this.value == 4096){
+			img = new ImageIcon("res/drawable/lzl.jpg");
 			setBackground(new Color(255, 60, 57));
-		this.setIcon(img);
-		this.setBounds(0,0,img.getIconWidth(), img.getIconHeight());
+		}
+		else if (this.value >= 8192){
+			img = new ImageIcon("res/drawable/yy.jpg");
+			setBackground(new Color(255, 60, 57));
+		}
+		if(img != null){
+			int labelWidth = this.getWidth() == 0 ? 100 : this.getWidth();
+			int labelHeight= this.getHeight() == 0 ? 100 : this.getHeight();
+			img.setImage(img.getImage().getScaledInstance(labelWidth, labelHeight, Image.SCALE_DEFAULT));
+			this.setIcon(img);
+			this.setBounds(0,0,img.getIconWidth(), img.getIconHeight());
+		}
 	}
 	
 	String[] starNames = {"韩雪", "高圆圆", "张庭", "林熙蕾", "蒋勤勤", "刘亦菲", "周慧敏", "白百合", "黄圣依", "杨幂", "王祖贤", "林心如", "林志玲", "杨颖"};

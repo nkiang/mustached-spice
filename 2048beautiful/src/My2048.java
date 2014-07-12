@@ -44,7 +44,7 @@ public class My2048 extends JFrame implements KeyListener {
 		for (int i = 0; i < numTotal; i++) {
 			block[i] = new Block();
 			block[i].setHorizontalAlignment(JLabel.CENTER);
-			// 不透明
+			// 涓嶉�鏄�
 			block[i].setOpaque(true);
 			panel.add(block[i]);
 		}
@@ -89,7 +89,7 @@ public class My2048 extends JFrame implements KeyListener {
 					if (valueI == valueJ) {
 						block[index].setValue(0);
 						block[j].setValue(valueI + valueJ);
-						if (valueI + valueJ == 4096)
+						if (valueI + valueJ == 8192)
 							win();
 						numFlag = true;
 						moveFlag = 0;
@@ -116,7 +116,7 @@ public class My2048 extends JFrame implements KeyListener {
 					if (valueI == valueJ) {
 						block[index].setValue(0);
 						block[j].setValue(valueI + valueJ);
-						if (valueI + valueJ == 4096)
+						if (valueI + valueJ == 8192)
 							win();
 						numFlag = true;
 						moveFlag = 0;
@@ -143,7 +143,7 @@ public class My2048 extends JFrame implements KeyListener {
 					if (valueI == valueJ) {
 						block[index].setValue(0);
 						block[j].setValue(valueI + valueJ);
-						if (valueI + valueJ == 4096)
+						if (valueI + valueJ == 8192)
 							win();
 						numFlag = true;
 						moveFlag = 0;
@@ -170,7 +170,7 @@ public class My2048 extends JFrame implements KeyListener {
 					if (valueI == valueJ) {
 						block[index].setValue(0);
 						block[j].setValue(valueI + valueJ);
-						if (valueI + valueJ == 4096)
+						if (valueI + valueJ == 8192)
 							win();
 						numFlag = true;
 						moveFlag = 0;
