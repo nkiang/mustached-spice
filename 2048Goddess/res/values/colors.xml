@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="block_default_bg">#0e0e0e</color>
+    <color name="block_text_bg">#FF0000</color>
+    <color name="block_text">#000000</color>
+</resources>

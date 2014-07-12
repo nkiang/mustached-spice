@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="block_width">100px</dimen>
+    <dimen name="block_height">100px</dimen>
+    <dimen name="block_text_size">18dip</dimen>
+    <dimen name="main_text_title">32dip</dimen>
+</resources>

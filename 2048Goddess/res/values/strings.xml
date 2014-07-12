@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">2048Goddess</string>
+
+    <string name="title">2048女神版</string>
+    <string name="start">开始</string>
+    <string name="restart">重新开始</string>
+</resources>
