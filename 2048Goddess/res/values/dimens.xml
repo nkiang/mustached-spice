@@ -4,4 +4,7 @@
     <dimen name="block_height">100px</dimen>
     <dimen name="block_text_size">18dip</dimen>
     <dimen name="main_text_title">32dip</dimen>
+    <dimen name="block_margin">20px</dimen>
+    <dimen name="score_text_size">24dip</dimen>
+    <dimen name="grid_margin">10px</dimen>
 </resources>

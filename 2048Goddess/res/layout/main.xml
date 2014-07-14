@@ -7,29 +7,46 @@
     
     <TextView 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0px"
         android:layout_gravity="center_vertical"
         android:text="@string/title"
         android:textAlignment="center"
-        android:textSize="@dimen/main_text_title"/>
+        android:textSize="@dimen/main_text_title"
+        android:layout_weight="1"/>
     <GridLayout android:id="@+id/main_grid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0px"
         android:rowCount="5"
-        android:columnCount="5">
+        android:columnCount="5"
+        android:layout_weight="5"
+        android:layout_margin="@dimen/grid_margin">
         
     </GridLayout>
     <LinearLayout 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView android:id="@+id/main_txt_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button android:id="@+id/main_btn_start"
-            android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="0px"
             android:layout_height="wrap_content"
-            android:text="@string/restart"/>
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/score_text_size"
+            android:text="@string/score"
+            android:layout_weight="1"/>
+        <TextView android:id="@+id/main_txt_score"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/score_text_size"
+            android:text="0"
+            android:layout_weight="1"/>
+        <Button android:id="@+id/main_btn_start"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:layout_weight="2"/>
     </LinearLayout>
 
 </LinearLayout>

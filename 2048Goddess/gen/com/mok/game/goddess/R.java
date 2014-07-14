@@ -17,9 +17,12 @@ public final class R {
     }
     public static final class dimen {
         public static final int block_height=0x7f050001;
+        public static final int block_margin=0x7f050004;
         public static final int block_text_size=0x7f050002;
         public static final int block_width=0x7f050000;
+        public static final int grid_margin=0x7f050006;
         public static final int main_text_title=0x7f050003;
+        public static final int score_text_size=0x7f050005;
     }
     public static final class drawable {
         public static final int bbh=0x7f020000;
@@ -55,6 +58,7 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f060000;
         public static final int restart=0x7f060003;
+        public static final int score=0x7f060004;
         public static final int start=0x7f060002;
         public static final int title=0x7f060001;
     }
@@ -81,8 +85,6 @@ public final class R {
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;
-        /**  <item name="android:windowBackground">@drawable/jiker</item> 
-         */
         public static final int AppBg=0x7f070002;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 

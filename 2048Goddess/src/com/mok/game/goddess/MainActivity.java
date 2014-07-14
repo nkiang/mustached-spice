@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
 	int numSqrt = 5;
 	int endStore = 8192;
 	int blockWidth;
+	int currentScore = 0;
 
 	//** Called when the activity is first created. **//
 	@Override
@@ -139,6 +140,7 @@ public class MainActivity extends Activity {
 							win();
 						numFlag = true;
 						moveFlag = 0;
+						setScore(valueI+valueJ);
 					} else if (numFlag == false)
 						moveFlag += 1;
 				}
@@ -165,6 +167,7 @@ public class MainActivity extends Activity {
 							win();
 						numFlag = true;
 						moveFlag = 0;
+						setScore(valueI+valueJ);
 					} else if (numFlag == false)
 						moveFlag += 1;
 				}
@@ -191,6 +194,7 @@ public class MainActivity extends Activity {
 							win();
 						numFlag = true;
 						moveFlag = 0;
+						setScore(valueI+valueJ);
 					} else if (numFlag == false)
 						moveFlag += 1;
 				}
@@ -217,6 +221,7 @@ public class MainActivity extends Activity {
 							win();
 						numFlag = true;
 						moveFlag = 0;
+						setScore(valueI+valueJ);
 					} else if (numFlag == false)
 						moveFlag += 1;
 				}
@@ -259,7 +264,16 @@ public class MainActivity extends Activity {
 			blocks[i].setValue(0);
     	for (int i = 0; i < 2; i++)
 			appearBlock();
+    	setScore(0);
     }
+
+	private void setScore(int value){
+		if(value == 0)
+			currentScore = 0;
+		else
+			currentScore += value;
+		main_score.setText(String.valueOf(currentScore));
+	}
     
     private void setBtnClick(){
     	main_start.setOnClickListener(new OnClickListener() {

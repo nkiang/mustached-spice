@@ -2,6 +2,7 @@ package com.mok.game.goddess;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -63,14 +64,25 @@ public class Block extends FrameLayout {
 		
 		//FrameLayout.LayoutParams params = new LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
 		FrameLayout.LayoutParams params = new LayoutParams(blockWidth, blockWidth);
+		//params.setMargins(5, 5, 5, 5);
+		params.gravity = Gravity.CENTER;
+		TextView txtBg = new TextView(mContext);
+		txtBg.setBackgroundColor(this.getResources().getColor(android.R.color.white));
+		this.addView(txtBg, params);
+		
+		blockWidth -= 10;
+		params = new LayoutParams(blockWidth, blockWidth);
+		params.gravity = Gravity.CENTER;
 		mImgStar = new ImageView(mContext);
-		mImgStar.setBackgroundColor(0x0E0E0E);
+		mImgStar.setBackgroundColor(this.getResources().getColor(android.R.color.darker_gray));
 		this.addView(mImgStar, params);
 		
+		blockWidth -= 10;
 		params = new LayoutParams(blockWidth, blockWidth);
+		params.gravity = Gravity.CENTER;
 		mTxtStar = new TextView(mContext);
-		mTxtStar.setBackgroundColor(0xFF0000);
-		mTxtStar.setTextColor(000000);
+		//mTxtStar.setBackgroundColor(0xFF0000);
+		mTxtStar.setTextColor(this.getResources().getColor(android.R.color.black));
 		mTxtStar.setTextSize(R.dimen.block_text_size);
 		this.addView(mTxtStar, params);
 	}
@@ -92,14 +104,17 @@ public class Block extends FrameLayout {
 		String starName = starNames[indexStar];
 		int starPic = starImages[indexStar];
 		if (value != 0){
+			mImgStar.setBackgroundResource(starPic);
 			setText(starName);
-			//mImgStar.setBackgroundResource(starPic);
-			mImgStar.setImageResource(starPic);
-			mImgStar.setScaleType(ScaleType.FIT_XY);
+			//mImgStar.setImageResource(starPic);
+			//mImgStar.setScaleType(ScaleType.FIT_XY);
 			System.out.println("value=" + value);
 		}
-		else
+		else{
 			mTxtStar.setText("");
+			mImgStar.setBackgroundColor(this.getResources().getColor(android.R.color.darker_gray));
+			mImgStar.setImageResource(0);
+		}
 		
 		//setBackground();
 	}
