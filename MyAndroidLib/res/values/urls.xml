@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_path">/mnt/sdcard/openlearningbar/download/第二讲 思维方法介绍.mp4</string>
+    <!-- <string name="video_url">http://www.bestetu.com:81/DisScorm/5fe936f0-eb49-4ce2-ad1f-a1a8e49f5266.mp4</string> -->
+    <!-- mp4 -->
+    <string name="video_url">http://v.youku.com/player/getRealM3U8/vid/XNDUwNjc4MzA4/type/mp4/v.m3u8</string>
+    <!-- flv -->
+    <!-- <string name="video_url">http://v.youku.com/player/getRealM3U8/vid/XNDUwNjc4MzA4/type/video.m3u8</string> -->
+</resources>

@@ -46,9 +46,10 @@ public final class R {
         public static final int block_frame=0x7f080000;
         public static final int block_img_bg=0x7f080001;
         public static final int block_txt_name=0x7f080002;
-        public static final int main_btn_start=0x7f080006;
+        public static final int main_btn_start=0x7f080007;
         public static final int main_grid=0x7f080004;
         public static final int main_linear=0x7f080003;
+        public static final int main_txt_highest_score=0x7f080006;
         public static final int main_txt_score=0x7f080005;
     }
     public static final class layout {

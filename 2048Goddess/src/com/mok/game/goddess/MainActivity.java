@@ -1,8 +1,17 @@
 package com.mok.game.goddess;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -28,6 +37,7 @@ public class MainActivity extends Activity {
 	GridLayout main_grid;
 	Button main_start;
 	TextView main_score;
+	TextView main_highest_score;
 	
 	Block[] blocks;
 	Block block;
@@ -39,6 +49,7 @@ public class MainActivity extends Activity {
 	int endStore = 8192;
 	int blockWidth;
 	int currentScore = 0;
+	boolean isGameOver = false;
 
 	//** Called when the activity is first created. **//
 	@Override
@@ -57,6 +68,7 @@ public class MainActivity extends Activity {
 		main_grid = (GridLayout)findViewById(R.id.main_grid);
 		main_start = (Button)findViewById(R.id.main_btn_start);
 		main_score = (TextView)findViewById(R.id.main_txt_score);
+		main_highest_score = (TextView) findViewById(R.id.main_txt_highest_score);
 	}
 	private void setContent(){
 		//init data
@@ -80,6 +92,24 @@ public class MainActivity extends Activity {
 			appearBlock();
 		//
 		setBtnClick();
+		
+		File directoryFile = new File(Environment.getExternalStorageDirectory() + "/lxl/");
+		if (!directoryFile.exists()) {
+			directoryFile.mkdir();
+		}
+		File storeFile = new File(directoryFile + "2048");
+		try{
+			if(!storeFile.exists())
+				storeFile.createNewFile();
+			else{
+				FileInputStream inputStream = new FileInputStream(storeFile);
+	            byte[] b = new byte[inputStream.available()];
+	            inputStream.read(b);
+	            main_highest_score.setText(new String(b));
+			}
+		}catch(Exception e){
+			Log.e("MainActivity", e.getMessage());
+		}
 	}
 	
 	public void addBlock() {
@@ -233,6 +263,15 @@ public class MainActivity extends Activity {
 	
 	public void over() {
 		if (!numFlag && moveFlag >= 36) {
+			blocks[numSqrt].setValue(0);
+			blocks[numSqrt+1].setValue(0);
+			blocks[numSqrt+2].setValue(0);
+			blocks[numSqrt+3].setValue(0);
+			blocks[numSqrt*2].setValue(0);
+			blocks[numSqrt*2+1].setValue(0);
+			blocks[numSqrt*2+2].setValue(0);
+			blocks[numSqrt*2+3].setValue(0);
+
 			blocks[numSqrt].setText("G");
 			blocks[numSqrt+1].setText("A");
 			blocks[numSqrt+2].setText("M");
@@ -241,13 +280,22 @@ public class MainActivity extends Activity {
 			blocks[numSqrt*2+1].setText("V");
 			blocks[numSqrt*2+2].setText("E");
 			blocks[numSqrt*2+3].setText("R");
-			
+
 			main_start.setText(R.string.start);
+			setHighScore();
+			isGameOver = true;
 		}
 	}
     
 	public void win() {
 		
+		blocks[0].setValue(0);
+		blocks[1].setValue(0);
+		blocks[2].setValue(0);
+		blocks[numTotal-3].setValue(0);
+		blocks[numTotal-2].setValue(0);
+		blocks[numTotal-1].setValue(0);
+
 		blocks[0].setText("Y");
 		blocks[1].setText("O");
 		blocks[2].setText("U");
@@ -256,8 +304,10 @@ public class MainActivity extends Activity {
 		blocks[numTotal-1].setText("N");
 		
 		main_start.setText(R.string.start);
+		setHighScore();
 	}
     public void reStart(){
+    	isGameOver = false;
     	numFlag=true;
 		moveFlag=0;
 		for(int i=0;i<numTotal;i++)
@@ -274,6 +324,28 @@ public class MainActivity extends Activity {
 			currentScore += value;
 		main_score.setText(String.valueOf(currentScore));
 	}
+	private void setHighScore(){
+		String _highSocre = (String) main_highest_score.getText();
+		String _currScore = (String) main_score.getText();
+		if(_highSocre.equals("") || Integer.parseInt(_highSocre) < Integer.parseInt(_currScore) )
+			main_highest_score.setText(_currScore);
+
+		String fileName = Environment.getExternalStorageDirectory() + "/lxl/2048";
+		String message = _currScore;
+		try{
+			File file = new File(fileName);
+			if(file.exists())
+				file.delete();
+			file.createNewFile();
+	        FileOutputStream fout = openFileOutput(fileName, MODE_PRIVATE);
+	        byte [] bytes = message.getBytes(); 
+	        fout.write(bytes); 
+	        fout.close(); 
+	    } 
+	    catch(Exception e){ 
+	        e.printStackTrace(); 
+	    } 
+	}
     
     private void setBtnClick(){
     	main_start.setOnClickListener(new OnClickListener() {
@@ -281,9 +353,33 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				reStart();
+				if(isGameOver)
+					reStart();
+				else
+					dialog();
 			}
 		});
+    }
+    
+    protected void dialog() {
+    	AlertDialog.Builder builder = new Builder(MainActivity.this);
+    	builder.setMessage("确认要重新玩吗？");
+    	builder.setTitle("提示");
+    	builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				reStart();
+				dialog.dismiss();
+			}
+		});
+	    builder.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+			}
+		});
+	    builder.create().show();
     }
 
 	private GestureDetector.OnGestureListener onGestureListener = 

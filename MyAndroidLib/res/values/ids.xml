@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="chat_record_img_avatar" />
+    <item type="id" name="chat_record_txt_name" />
+    <item type="id" name="chat_record_txt_timeago" />
+    <item type="id" name="chat_record_txt_content" />
+    <item type="id" name="test_listview_chat" />
+</resources>
