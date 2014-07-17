@@ -365,17 +365,16 @@ public class MainActivity extends Activity {
     	AlertDialog.Builder builder = new Builder(MainActivity.this);
     	builder.setMessage("确认要重新玩吗？");
     	builder.setTitle("提示");
-    	builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				reStart();
-				dialog.dismiss();
-			}
-		});
-	    builder.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+    	builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+			}
+		}).setPositiveButton("确认", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				reStart();
 				dialog.dismiss();
 			}
 		});
