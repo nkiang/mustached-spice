@@ -42,6 +42,13 @@
             android:textSize="@dimen/score_text_size"
             android:text="0"
             android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/score_text_size"
+            android:text="@string/highest_score"
+            android:layout_weight="1"/>
         <TextView android:id="@+id/main_txt_highest_score"
             android:layout_width="0px"
             android:layout_height="wrap_content"

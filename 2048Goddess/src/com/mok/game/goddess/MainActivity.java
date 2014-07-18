@@ -93,11 +93,7 @@ public class MainActivity extends Activity {
 		//
 		setBtnClick();
 		
-		File directoryFile = new File(Environment.getExternalStorageDirectory() + "/lxl/");
-		if (!directoryFile.exists()) {
-			directoryFile.mkdir();
-		}
-		File storeFile = new File(directoryFile + "2048");
+		File storeFile = new File(getFilesDir() + "/2048");
 		try{
 			if(!storeFile.exists())
 				storeFile.createNewFile();
@@ -110,6 +106,8 @@ public class MainActivity extends Activity {
 		}catch(Exception e){
 			Log.e("MainActivity", e.getMessage());
 		}
+		if(main_highest_score.getText().equals(""))
+			main_highest_score.setText("0");
 	}
 	
 	public void addBlock() {
@@ -327,24 +325,25 @@ public class MainActivity extends Activity {
 	private void setHighScore(){
 		String _highSocre = (String) main_highest_score.getText();
 		String _currScore = (String) main_score.getText();
-		if(_highSocre.equals("") || Integer.parseInt(_highSocre) < Integer.parseInt(_currScore) )
+		if(_highSocre.equals("0") || Integer.parseInt(_highSocre) < Integer.parseInt(_currScore) ){
 			main_highest_score.setText(_currScore);
-
-		String fileName = Environment.getExternalStorageDirectory() + "/lxl/2048";
-		String message = _currScore;
-		try{
-			File file = new File(fileName);
-			if(file.exists())
-				file.delete();
-			file.createNewFile();
-	        FileOutputStream fout = openFileOutput(fileName, MODE_PRIVATE);
-	        byte [] bytes = message.getBytes(); 
-	        fout.write(bytes); 
-	        fout.close(); 
-	    } 
-	    catch(Exception e){ 
-	        e.printStackTrace(); 
-	    } 
+			
+			String fileName = getFilesDir() + "/2048";
+			String message = _currScore;
+			try{
+				File file = new File(fileName);
+				if(file.exists())
+					file.delete();
+				file.createNewFile();
+		        FileOutputStream fout = openFileOutput(fileName, MODE_PRIVATE);
+		        byte [] bytes = message.getBytes(); 
+		        fout.write(bytes); 
+		        fout.close(); 
+		    } 
+		    catch(Exception e){ 
+		        e.printStackTrace(); 
+		    } 
+		}
 	}
     
     private void setBtnClick(){

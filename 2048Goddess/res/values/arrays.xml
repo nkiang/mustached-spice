@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="starNames">
+        <item>韩雪</item>
+        <item>高圆圆</item>
+        <item>张庭</item>
+        <item>林熙蕾</item>
+        <item>蒋勤勤</item>
+        <item>刘亦菲</item>
+        <item>周慧敏</item>
+        <item>白百合</item>
+        <item>黄圣依</item>
+        <item>杨幂</item>
+        <item>王祖贤</item>
+        <item>林心如</item>
+        <item>林志玲</item>
+        <item>杨颖</item>
+    </string-array>
+</resources>

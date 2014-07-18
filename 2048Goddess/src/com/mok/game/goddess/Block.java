@@ -123,8 +123,9 @@ public class Block extends FrameLayout {
 		mTxtStar.setText(value);
 	}
 	
-	String[] starNames = {"韩雪", "高圆圆", "张庭", "林熙蕾", "蒋勤勤", "刘亦菲", "周慧敏", "白百合", "黄圣依", "杨幂", "王祖贤", "林心如", "林志玲", "杨颖"};
+	//String[] starNames = {"韩雪", "高圆圆", "张庭", "林熙蕾", "蒋勤勤", "刘亦菲", "周慧敏", "白百合", "黄圣依", "杨幂", "王祖贤", "林心如", "林志玲", "杨颖"};
 	int[] starImages = {R.drawable.hx, R.drawable.gyy, R.drawable.zt, R.drawable.lxl, R.drawable.jqq, R.drawable.lyf, R.drawable.zhm, R.drawable.bbh, R.drawable.hsy, R.drawable.ym, R.drawable.wzx, R.drawable.lxr, R.drawable.lzl, R.drawable.yy};
+	String[] starNames = this.getResources().getStringArray(R.array.starNames);
 
 	
 //	@Override
