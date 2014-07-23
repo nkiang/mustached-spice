@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:15
+-keep class com.mok.game.goddess.MainActivity { <init>(...); }
+

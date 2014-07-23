@@ -1,0 +1,59 @@
+com.mok.game.goddess.Block -> com.mok.game.goddess.a:
+    android.content.Context mContext -> c
+    android.widget.TextView mTxtStar -> d
+    android.widget.ImageView mImgStar -> e
+    int value -> f
+    int[] starImages -> a
+    java.lang.String[] starNames -> b
+    int getValue() -> a
+    void setValue(int) -> a
+    void setText(java.lang.String) -> a
+com.mok.game.goddess.MainActivity -> com.mok.game.goddess.MainActivity:
+    int RIGHT -> a
+    int LEFT -> b
+    int TOP -> c
+    int BOTTOM -> d
+    android.view.GestureDetector gestureDetector -> v
+    android.widget.LinearLayout main_linear -> e
+    android.widget.GridLayout main_grid -> f
+    android.widget.Button main_start -> g
+    android.widget.TextView main_score -> h
+    android.widget.TextView main_highest_score -> i
+    com.mok.game.goddess.Block[] blocks -> j
+    boolean numFlag -> k
+    int numTotal -> l
+    int numSqrt -> m
+    int endStore -> n
+    int blockWidth -> o
+    int currentScore -> p
+    boolean isGameOver -> q
+    boolean leftFlag -> r
+    boolean rightFlag -> s
+    boolean upFlag -> t
+    boolean downFlag -> u
+    android.view.GestureDetector$OnGestureListener onGestureListener -> w
+    void onCreate(android.os.Bundle) -> onCreate
+    void addBlock() -> c
+    void appearBlock() -> d
+    void judgeAppear() -> e
+    void setMoveFlag(int) -> b
+    void over() -> f
+    void win() -> g
+    void reStart() -> a
+    void setScore(int) -> c
+    void setHighScore() -> h
+    void dialog() -> b
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void doResult(int) -> a
+com.mok.game.goddess.MainActivity$1 -> com.mok.game.goddess.b:
+    com.mok.game.goddess.MainActivity this$0 -> a
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+com.mok.game.goddess.MainActivity$2 -> com.mok.game.goddess.c:
+    com.mok.game.goddess.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mok.game.goddess.MainActivity$3 -> com.mok.game.goddess.d:
+    com.mok.game.goddess.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mok.game.goddess.MainActivity$4 -> com.mok.game.goddess.e:
+    com.mok.game.goddess.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick

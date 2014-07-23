@@ -1,0 +1,2 @@
+com.mok.game.goddess.MainActivity
+com.mok.game.goddess.MainActivity: MainActivity()

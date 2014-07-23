@@ -10,8 +10,9 @@
 	<TextView android:id="@+id/block_txt_name"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    android:text=""
+	    android:text="美女"
 	    android:background="@color/block_text_bg"
 	    android:textColor="@color/block_text"
-	    android:textSize="@dimen/block_text_size"/>
+	    android:textSize="@dimen/block_text_size"
+	    android:gravity="center"/>
 </FrameLayout>

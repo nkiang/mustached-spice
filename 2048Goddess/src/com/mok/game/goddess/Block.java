@@ -2,6 +2,7 @@ package com.mok.game.goddess;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
@@ -79,11 +80,12 @@ public class Block extends FrameLayout {
 		
 		blockWidth -= 10;
 		params = new LayoutParams(blockWidth, blockWidth);
-		params.gravity = Gravity.CENTER;
+//		params.gravity = Gravity.CENTER;
 		mTxtStar = new TextView(mContext);
 		//mTxtStar.setBackgroundColor(0xFF0000);
 		mTxtStar.setTextColor(this.getResources().getColor(android.R.color.black));
-		mTxtStar.setTextSize(R.dimen.block_text_size);
+//		mTxtStar.setTextSize(TypedValue.COMPLEX_UNIT_PX, 20);
+		mTxtStar.setGravity(Gravity.CENTER);
 		this.addView(mTxtStar, params);
 	}
 
@@ -105,15 +107,15 @@ public class Block extends FrameLayout {
 		int starPic = starImages[indexStar];
 		if (value != 0){
 			mImgStar.setBackgroundResource(starPic);
-			setText(starName);
+//			setText(starName);
 			//mImgStar.setImageResource(starPic);
 			//mImgStar.setScaleType(ScaleType.FIT_XY);
 			System.out.println("value=" + value);
 		}
 		else{
-			mTxtStar.setText("");
 			mImgStar.setBackgroundColor(this.getResources().getColor(android.R.color.darker_gray));
 			mImgStar.setImageResource(0);
+			mTxtStar.setText("");
 		}
 		
 		//setBackground();
@@ -124,7 +126,7 @@ public class Block extends FrameLayout {
 	}
 	
 	//String[] starNames = {"韩雪", "高圆圆", "张庭", "林熙蕾", "蒋勤勤", "刘亦菲", "周慧敏", "白百合", "黄圣依", "杨幂", "王祖贤", "林心如", "林志玲", "杨颖"};
-	int[] starImages = {R.drawable.hx, R.drawable.gyy, R.drawable.zt, R.drawable.lxl, R.drawable.jqq, R.drawable.lyf, R.drawable.zhm, R.drawable.bbh, R.drawable.hsy, R.drawable.ym, R.drawable.wzx, R.drawable.lxr, R.drawable.lzl, R.drawable.yy};
+	int[] starImages = {R.drawable.hx, R.drawable.zt, R.drawable.gyy, R.drawable.lxl, R.drawable.jqq, R.drawable.lyf, R.drawable.sara, R.drawable.bbh, R.drawable.hsy, R.drawable.ym, R.drawable.ynj, R.drawable.lxr, R.drawable.lzl, R.drawable.yy};
 	String[] starNames = this.getResources().getStringArray(R.array.starNames);
 
 	

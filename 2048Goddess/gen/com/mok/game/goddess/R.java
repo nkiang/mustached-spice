@@ -39,10 +39,10 @@ public final class R {
         public static final int lxr=0x7f020008;
         public static final int lyf=0x7f020009;
         public static final int lzl=0x7f02000a;
-        public static final int wzx=0x7f02000b;
+        public static final int sara=0x7f02000b;
         public static final int ym=0x7f02000c;
-        public static final int yy=0x7f02000d;
-        public static final int zhm=0x7f02000e;
+        public static final int ynj=0x7f02000d;
+        public static final int yy=0x7f02000e;
         public static final int zt=0x7f02000f;
     }
     public static final class id {

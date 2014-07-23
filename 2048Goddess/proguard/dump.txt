@@ -1,0 +1,3418 @@
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/a
+  Superclass:    android/widget/FrameLayout
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.mok.game.goddess.a extends android.widget.FrameLayout
+
+Interfaces (count = 0):
+
+Constant Pool (count = 168):
+  - Integer [17170432]
+  - Integer [17170443]
+  - Integer [17170444]
+  - Integer [2130837504]
+  - Integer [2130837505]
+  - Integer [2130837506]
+  - Integer [2130837507]
+  - Integer [2130837510]
+  - Integer [2130837511]
+  - Integer [2130837512]
+  - Integer [2130837513]
+  - Integer [2130837514]
+  - Integer [2130837515]
+  - Integer [2130837516]
+  - Integer [2130837517]
+  - Integer [2130837518]
+  - Integer [2130837519]
+  - Integer [2130968576]
+  - String []
+  - String [value=]
+  - String [window]
+  - Class [android/content/Context]
+  - Class [android/content/res/Resources]
+  - Class [android/view/Display]
+  - Class [android/view/WindowManager]
+  - Class [android/widget/FrameLayout]
+  - Class [android/widget/FrameLayout$LayoutParams]
+  - Class [android/widget/ImageView]
+  - Class [android/widget/TextView]
+  - Class [com/mok/game/goddess/a]
+  - Class [java/io/PrintStream]
+  - Class [java/lang/Math]
+  - Class [java/lang/String]
+  - Class [java/lang/StringBuilder]
+  - Class [java/lang/System]
+  - Double [2.0]
+  - Fieldref [android/widget/FrameLayout$LayoutParams.gravity I]
+  - Fieldref [com/mok/game/goddess/a.a [I]
+  - Fieldref [com/mok/game/goddess/a.b [Ljava/lang/String;]
+  - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+  - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+  - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+  - Fieldref [com/mok/game/goddess/a.f I]
+  - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+  - Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  - Methodref [android/content/res/Resources.getColor (I)I]
+  - Methodref [android/content/res/Resources.getStringArray (I)[Ljava/lang/String;]
+  - Methodref [android/view/Display.getWidth ()I]
+  - Methodref [android/widget/FrameLayout.<init> (Landroid/content/Context;)V]
+  - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+  - Methodref [android/widget/ImageView.<init> (Landroid/content/Context;)V]
+  - Methodref [android/widget/ImageView.setBackgroundColor (I)V]
+  - Methodref [android/widget/ImageView.setBackgroundResource (I)V]
+  - Methodref [android/widget/ImageView.setImageResource (I)V]
+  - Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+  - Methodref [android/widget/TextView.setBackgroundColor (I)V]
+  - Methodref [android/widget/TextView.setGravity (I)V]
+  - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  - Methodref [android/widget/TextView.setTextColor (I)V]
+  - Methodref [com/mok/game/goddess/a.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+  - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+  - Methodref [java/lang/Math.pow (DD)D]
+  - Methodref [java/lang/Math.round (F)I]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+  - NameAndType [<init> (II)V]
+  - NameAndType [<init> (Landroid/content/Context;)V]
+  - NameAndType [<init> (Ljava/lang/String;)V]
+  - NameAndType [a [I]
+  - NameAndType [addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - NameAndType [append (I)Ljava/lang/StringBuilder;]
+  - NameAndType [b [Ljava/lang/String;]
+  - NameAndType [c Landroid/content/Context;]
+  - NameAndType [d Landroid/widget/TextView;]
+  - NameAndType [e Landroid/widget/ImageView;]
+  - NameAndType [f I]
+  - NameAndType [getColor (I)I]
+  - NameAndType [getDefaultDisplay ()Landroid/view/Display;]
+  - NameAndType [getResources ()Landroid/content/res/Resources;]
+  - NameAndType [getStringArray (I)[Ljava/lang/String;]
+  - NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  - NameAndType [getWidth ()I]
+  - NameAndType [gravity I]
+  - NameAndType [out Ljava/io/PrintStream;]
+  - NameAndType [pow (DD)D]
+  - NameAndType [println (Ljava/lang/String;)V]
+  - NameAndType [round (F)I]
+  - NameAndType [setBackgroundColor (I)V]
+  - NameAndType [setBackgroundResource (I)V]
+  - NameAndType [setGravity (I)V]
+  - NameAndType [setImageResource (I)V]
+  - NameAndType [setText (Ljava/lang/CharSequence;)V]
+  - NameAndType [setTextColor (I)V]
+  - NameAndType [toString ()Ljava/lang/String;]
+  - Utf8 []
+  - Utf8 [()I]
+  - Utf8 [()Landroid/content/res/Resources;]
+  - Utf8 [()Landroid/view/Display;]
+  - Utf8 [()Ljava/lang/String;]
+  - Utf8 [(DD)D]
+  - Utf8 [(F)I]
+  - Utf8 [(I)I]
+  - Utf8 [(I)Ljava/lang/StringBuilder;]
+  - Utf8 [(I)V]
+  - Utf8 [(I)[Ljava/lang/String;]
+  - Utf8 [(II)V]
+  - Utf8 [(Landroid/content/Context;)V]
+  - Utf8 [(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - Utf8 [(Ljava/lang/CharSequence;)V]
+  - Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  - Utf8 [(Ljava/lang/String;)V]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [I]
+  - Utf8 [Landroid/content/Context;]
+  - Utf8 [Landroid/widget/ImageView;]
+  - Utf8 [Landroid/widget/TextView;]
+  - Utf8 [Ljava/io/PrintStream;]
+  - Utf8 [StackMapTable]
+  - Utf8 [[I]
+  - Utf8 [[Ljava/lang/String;]
+  - Utf8 [a]
+  - Utf8 [addView]
+  - Utf8 [android/content/Context]
+  - Utf8 [android/content/res/Resources]
+  - Utf8 [android/view/Display]
+  - Utf8 [android/view/WindowManager]
+  - Utf8 [android/widget/FrameLayout]
+  - Utf8 [android/widget/FrameLayout$LayoutParams]
+  - Utf8 [android/widget/ImageView]
+  - Utf8 [android/widget/TextView]
+  - Utf8 [append]
+  - Utf8 [b]
+  - Utf8 [c]
+  - Utf8 [com/mok/game/goddess/a]
+  - Utf8 [d]
+  - Utf8 [e]
+  - Utf8 [f]
+  - Utf8 [getColor]
+  - Utf8 [getDefaultDisplay]
+  - Utf8 [getResources]
+  - Utf8 [getStringArray]
+  - Utf8 [getSystemService]
+  - Utf8 [getWidth]
+  - Utf8 [gravity]
+  - Utf8 [java/io/PrintStream]
+  - Utf8 [java/lang/Math]
+  - Utf8 [java/lang/String]
+  - Utf8 [java/lang/StringBuilder]
+  - Utf8 [java/lang/System]
+  - Utf8 [out]
+  - Utf8 [pow]
+  - Utf8 [println]
+  - Utf8 [round]
+  - Utf8 [setBackgroundColor]
+  - Utf8 [setBackgroundResource]
+  - Utf8 [setGravity]
+  - Utf8 [setImageResource]
+  - Utf8 [setText]
+  - Utf8 [setTextColor]
+  - Utf8 [toString]
+  - Utf8 [value=]
+  - Utf8 [window]
+
+Fields (count = 6):
+  - Field:        c Landroid/content/Context;
+    Access flags: 0x2
+      = private android.content.Context c
+  - Field:        d Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView d
+  - Field:        e Landroid/widget/ImageView;
+    Access flags: 0x2
+      = private android.widget.ImageView e
+  - Field:        f I
+    Access flags: 0x2
+      = private int f
+  - Field:        a [I
+    Access flags: 0x0
+      = int[] a
+  - Field:        b [Ljava/lang/String;
+    Access flags: 0x0
+      = java.lang.String[] b
+
+Methods (count = 4):
+  - Method:       <init>(Landroid/content/Context;)V
+    Access flags: 0x1
+      = public a(android.content.Context)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 320, locals = 5, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #50
+        - Methodref [android/widget/FrameLayout.<init> (Landroid/content/Context;)V]
+      [5] aload_0 v0
+      [6] bipush 14
+      [8] newarray 10
+      [10] dup
+      [11] iconst_0
+      [12] ldc #7
+        - Integer [2130837507]
+      [14] iastore
+      [15] dup
+      [16] iconst_1
+      [17] ldc #17
+        - Integer [2130837519]
+      [19] iastore
+      [20] dup
+      [21] iconst_2
+      [22] ldc #5
+        - Integer [2130837505]
+      [24] iastore
+      [25] dup
+      [26] iconst_3
+      [27] ldc #9
+        - Integer [2130837511]
+      [29] iastore
+      [30] dup
+      [31] iconst_4
+      [32] ldc #8
+        - Integer [2130837510]
+      [34] iastore
+      [35] dup
+      [36] iconst_5
+      [37] ldc #11
+        - Integer [2130837513]
+      [39] iastore
+      [40] dup
+      [41] bipush 6
+      [43] ldc #13
+        - Integer [2130837515]
+      [45] iastore
+      [46] dup
+      [47] bipush 7
+      [49] ldc #4
+        - Integer [2130837504]
+      [51] iastore
+      [52] dup
+      [53] bipush 8
+      [55] ldc #6
+        - Integer [2130837506]
+      [57] iastore
+      [58] dup
+      [59] bipush 9
+      [61] ldc #14
+        - Integer [2130837516]
+      [63] iastore
+      [64] dup
+      [65] bipush 10
+      [67] ldc #15
+        - Integer [2130837517]
+      [69] iastore
+      [70] dup
+      [71] bipush 11
+      [73] ldc #10
+        - Integer [2130837512]
+      [75] iastore
+      [76] dup
+      [77] bipush 12
+      [79] ldc #12
+        - Integer [2130837514]
+      [81] iastore
+      [82] dup
+      [83] bipush 13
+      [85] ldc #16
+        - Integer [2130837518]
+      [87] iastore
+      [88] putfield #39
+        - Fieldref [com/mok/game/goddess/a.a [I]
+      [91] aload_0 v0
+      [92] aload_0 v0
+      [93] invokevirtual #62
+        - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+      [96] ldc #18
+        - Integer [2130968576]
+      [98] invokevirtual #48
+        - Methodref [android/content/res/Resources.getStringArray (I)[Ljava/lang/String;]
+      [101] putfield #40
+        - Fieldref [com/mok/game/goddess/a.b [Ljava/lang/String;]
+      [104] aload_0 v0
+      [105] aload_1 v1
+      [106] astore_2 v2
+      [107] dup
+      [108] astore_1 v1
+      [109] aload_2 v2
+      [110] putfield #41
+        - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+      [113] aload_1 v1
+      [114] iconst_0
+      [115] putfield #44
+        - Fieldref [com/mok/game/goddess/a.f I]
+      [118] aload_1 v1
+      [119] getfield #41
+        - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+      [122] ldc #21
+        - String [window]
+      [124] invokevirtual #46
+        - Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [127] checkcast #25
+        - Class [android/view/WindowManager]
+      [130] dup
+      [131] astore_2 v2
+      [132] invokeinterface #69
+        - InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [137] invokevirtual #49
+        - Methodref [android/view/Display.getWidth ()I]
+      [140] dup
+      [141] istore_2 v2
+      [142] iconst_5
+      [143] idiv
+      [144] i2f
+      [145] invokestatic #65
+        - Methodref [java/lang/Math.round (F)I]
+      [148] istore_2 v2
+      [149] new #27
+        - Class [android/widget/FrameLayout$LayoutParams]
+      [152] dup
+      [153] iload_2 v2
+      [154] iload_2 v2
+      [155] invokespecial #51
+        - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+      [158] dup
+      [159] astore_3 v3
+      [160] bipush 17
+      [162] putfield #38
+        - Fieldref [android/widget/FrameLayout$LayoutParams.gravity I]
+      [165] new #29
+        - Class [android/widget/TextView]
+      [168] dup
+      [169] aload_1 v1
+      [170] getfield #41
+        - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+      [173] invokespecial #56
+        - Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+      [176] dup
+      [177] astore v4
+      [179] aload_1 v1
+      [180] invokevirtual #62
+        - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+      [183] ldc #2
+        - Integer [17170443]
+      [185] invokevirtual #47
+        - Methodref [android/content/res/Resources.getColor (I)I]
+      [188] invokevirtual #57
+        - Methodref [android/widget/TextView.setBackgroundColor (I)V]
+      [191] aload_1 v1
+      [192] aload v4
+      [194] aload_3 v3
+      [195] invokevirtual #61
+        - Methodref [com/mok/game/goddess/a.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+      [198] iinc v2, -10
+      [201] new #27
+        - Class [android/widget/FrameLayout$LayoutParams]
+      [204] dup
+      [205] iload_2 v2
+      [206] iload_2 v2
+      [207] invokespecial #51
+        - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+      [210] dup
+      [211] astore_3 v3
+      [212] bipush 17
+      [214] putfield #38
+        - Fieldref [android/widget/FrameLayout$LayoutParams.gravity I]
+      [217] aload_1 v1
+      [218] new #28
+        - Class [android/widget/ImageView]
+      [221] dup
+      [222] aload_1 v1
+      [223] getfield #41
+        - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+      [226] invokespecial #52
+        - Methodref [android/widget/ImageView.<init> (Landroid/content/Context;)V]
+      [229] putfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [232] aload_1 v1
+      [233] getfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [236] aload_1 v1
+      [237] invokevirtual #62
+        - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+      [240] ldc #1
+        - Integer [17170432]
+      [242] invokevirtual #47
+        - Methodref [android/content/res/Resources.getColor (I)I]
+      [245] invokevirtual #53
+        - Methodref [android/widget/ImageView.setBackgroundColor (I)V]
+      [248] aload_1 v1
+      [249] aload_1 v1
+      [250] getfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [253] aload_3 v3
+      [254] invokevirtual #61
+        - Methodref [com/mok/game/goddess/a.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+      [257] iinc v2, -10
+      [260] new #27
+        - Class [android/widget/FrameLayout$LayoutParams]
+      [263] dup
+      [264] iload_2 v2
+      [265] iload_2 v2
+      [266] invokespecial #51
+        - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+      [269] astore_3 v3
+      [270] aload_1 v1
+      [271] new #29
+        - Class [android/widget/TextView]
+      [274] dup
+      [275] aload_1 v1
+      [276] getfield #41
+        - Fieldref [com/mok/game/goddess/a.c Landroid/content/Context;]
+      [279] invokespecial #56
+        - Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+      [282] putfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [285] aload_1 v1
+      [286] getfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [289] aload_1 v1
+      [290] invokevirtual #62
+        - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+      [293] ldc #3
+        - Integer [17170444]
+      [295] invokevirtual #47
+        - Methodref [android/content/res/Resources.getColor (I)I]
+      [298] invokevirtual #60
+        - Methodref [android/widget/TextView.setTextColor (I)V]
+      [301] aload_1 v1
+      [302] getfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [305] bipush 17
+      [307] invokevirtual #58
+        - Methodref [android/widget/TextView.setGravity (I)V]
+      [310] aload_1 v1
+      [311] aload_1 v1
+      [312] getfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [315] aload_3 v3
+      [316] invokevirtual #61
+        - Methodref [com/mok/game/goddess/a.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+      [319] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       a()I
+    Access flags: 0x11
+      = public final int a()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #44
+        - Fieldref [com/mok/game/goddess/a.f I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       a(I)V
+    Access flags: 0x11
+      = public final void a(int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 120, locals = 4, stack = 4):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #44
+        - Fieldref [com/mok/game/goddess/a.f I]
+      [5] iconst_0
+      [6] istore_2 v2
+      [7] iconst_1
+      [8] istore_3 v3
+      [9] goto +24 (target=33)
+      [12] ldc2_w #36
+        - Double [2.0]
+      [15] iload_3 v3
+      [16] i2d
+      [17] invokestatic #64
+        - Methodref [java/lang/Math.pow (DD)D]
+      [20] d2i
+      [21] iload_1 v1
+      [22] ificmpne +8 (target=30)
+      [25] iload_3 v3
+      [26] istore_2 v2
+      [27] goto +12 (target=39)
+      [30] iinc v3, 1
+      [33] iload_3 v3
+      [34] bipush 20
+      [36] ificmplt -24 (target=12)
+      [39] aload_0 v0
+      [40] getfield #40
+        - Fieldref [com/mok/game/goddess/a.b [Ljava/lang/String;]
+      [43] pop
+      [44] aload_0 v0
+      [45] getfield #39
+        - Fieldref [com/mok/game/goddess/a.a [I]
+      [48] iload_2 v2
+      [49] iaload
+      [50] istore_2 v2
+      [51] iload_1 v1
+      [52] ifeq +34 (target=86)
+      [55] aload_0 v0
+      [56] getfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [59] iload_2 v2
+      [60] invokevirtual #54
+        - Methodref [android/widget/ImageView.setBackgroundResource (I)V]
+      [63] getstatic #45
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [66] new #34
+        - Class [java/lang/StringBuilder]
+      [69] dup
+      [70] ldc #20
+        - String [value=]
+      [72] invokespecial #66
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [75] iload_1 v1
+      [76] invokevirtual #67
+        - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [79] invokevirtual #68
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [82] invokevirtual #63
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [85] return
+      [86] aload_0 v0
+      [87] getfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [90] aload_0 v0
+      [91] invokevirtual #62
+        - Methodref [com/mok/game/goddess/a.getResources ()Landroid/content/res/Resources;]
+      [94] ldc #1
+        - Integer [17170432]
+      [96] invokevirtual #47
+        - Methodref [android/content/res/Resources.getColor (I)I]
+      [99] invokevirtual #53
+        - Methodref [android/widget/ImageView.setBackgroundColor (I)V]
+      [102] aload_0 v0
+      [103] getfield #43
+        - Fieldref [com/mok/game/goddess/a.e Landroid/widget/ImageView;]
+      [106] iconst_0
+      [107] invokevirtual #55
+        - Methodref [android/widget/ImageView.setImageResource (I)V]
+      [110] aload_0 v0
+      [111] getfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [114] ldc #19
+        - String []
+      [116] invokevirtual #59
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [119] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 5):
+        - [12] Var: ...[i][i], Stack: (empty)
+        - [30] Var: ..., Stack: (empty)
+        - [33] Var: ..., Stack: (empty)
+        - [39] Var: -1, Stack: (empty)
+        - [86] Var: -2, Stack: (empty)
+  - Method:       a(Ljava/lang/String;)V
+    Access flags: 0x11
+      = public final void a(java.lang.String)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #42
+        - Fieldref [com/mok/game/goddess/a.d Landroid/widget/TextView;]
+      [4] aload_1 v1
+      [5] invokevirtual #59
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/MainActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.mok.game.goddess.MainActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 470):
+  - Integer [0]
+  - Integer [1]
+  - Integer [2]
+  - Integer [3]
+  - Integer [2130903041]
+  - Integer [2131165186]
+  - Integer [2131296259]
+  - Integer [2131296260]
+  - Integer [2131296261]
+  - Integer [2131296262]
+  - Integer [2131296263]
+  - String []
+  - String [/2048]
+  - String [0]
+  - String [GAME]
+  - String [MainActivity]
+  - String [OVER]
+  - String [UTF-8]
+  - String [WIN]
+  - String [YOU]
+  - String [go bottom]
+  - String [go left]
+  - String [go right]
+  - String [go top]
+  - String [window]
+  - String [取消]
+  - String [提示]
+  - String [确认]
+  - String [确认要重新玩吗？]
+  - Class [android/app/Activity]
+  - Class [android/app/AlertDialog]
+  - Class [android/app/AlertDialog$Builder]
+  - Class [android/os/Bundle]
+  - Class [android/util/Log]
+  - Class [android/view/Display]
+  - Class [android/view/GestureDetector]
+  - Class [android/view/WindowManager]
+  - Class [android/widget/Button]
+  - Class [android/widget/FrameLayout$LayoutParams]
+  - Class [android/widget/GridLayout]
+  - Class [android/widget/GridLayout$LayoutParams]
+  - Class [android/widget/LinearLayout]
+  - Class [android/widget/LinearLayout$LayoutParams]
+  - Class [android/widget/TextView]
+  - Class [com/mok/game/goddess/MainActivity]
+  - Class [com/mok/game/goddess/a]
+  - Class [com/mok/game/goddess/b]
+  - Class [com/mok/game/goddess/c]
+  - Class [com/mok/game/goddess/d]
+  - Class [com/mok/game/goddess/e]
+  - Class [java/io/File]
+  - Class [java/io/FileInputStream]
+  - Class [java/io/FileOutputStream]
+  - Class [java/io/IOException]
+  - Class [java/io/OutputStreamWriter]
+  - Class [java/io/PrintStream]
+  - Class [java/lang/Exception]
+  - Class [java/lang/Integer]
+  - Class [java/lang/Math]
+  - Class [java/lang/Object]
+  - Class [java/lang/String]
+  - Class [java/lang/StringBuilder]
+  - Class [java/lang/System]
+  - Class [java/lang/Throwable]
+  - Class [java/nio/ByteBuffer]
+  - Class [java/nio/CharBuffer]
+  - Class [java/nio/charset/Charset]
+  - Double [0.5]
+  - Fieldref [com/mok/game/goddess/MainActivity.a I]
+  - Fieldref [com/mok/game/goddess/MainActivity.b I]
+  - Fieldref [com/mok/game/goddess/MainActivity.c I]
+  - Fieldref [com/mok/game/goddess/MainActivity.d I]
+  - Fieldref [com/mok/game/goddess/MainActivity.e Landroid/widget/LinearLayout;]
+  - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+  - Fieldref [com/mok/game/goddess/MainActivity.g Landroid/widget/Button;]
+  - Fieldref [com/mok/game/goddess/MainActivity.h Landroid/widget/TextView;]
+  - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+  - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+  - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.l I]
+  - Fieldref [com/mok/game/goddess/MainActivity.m I]
+  - Fieldref [com/mok/game/goddess/MainActivity.n I]
+  - Fieldref [com/mok/game/goddess/MainActivity.o I]
+  - Fieldref [com/mok/game/goddess/MainActivity.p I]
+  - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+  - Fieldref [com/mok/game/goddess/MainActivity.v Landroid/view/GestureDetector;]
+  - Fieldref [com/mok/game/goddess/MainActivity.w Landroid/view/GestureDetector$OnGestureListener;]
+  - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+  - Methodref [android/app/Activity.<init> ()V]
+  - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  - Methodref [android/app/AlertDialog.show ()V]
+  - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+  - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [android/view/Display.getWidth ()I]
+  - Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  - Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+  - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  - Methodref [android/widget/Button.setText (I)V]
+  - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+  - Methodref [android/widget/GridLayout.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - Methodref [android/widget/GridLayout.setColumnCount (I)V]
+  - Methodref [android/widget/GridLayout.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+  - Methodref [android/widget/GridLayout.setRowCount (I)V]
+  - Methodref [android/widget/GridLayout.spec (I)Landroid/widget/GridLayout$Spec;]
+  - Methodref [android/widget/GridLayout$LayoutParams.<init> (Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Spec;)V]
+  - Methodref [android/widget/GridLayout$LayoutParams.setGravity (I)V]
+  - Methodref [android/widget/LinearLayout$LayoutParams.<init> (II)V]
+  - Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+  - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+  - Methodref [com/mok/game/goddess/MainActivity.c ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+  - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.e ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.f ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+  - Methodref [com/mok/game/goddess/MainActivity.g ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.getFilesDir ()Ljava/io/File;]
+  - Methodref [com/mok/game/goddess/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  - Methodref [com/mok/game/goddess/MainActivity.h ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.requestWindowFeature (I)Z]
+  - Methodref [com/mok/game/goddess/MainActivity.setContentView (I)V]
+  - Methodref [com/mok/game/goddess/a.<init> (Landroid/content/Context;)V]
+  - Methodref [com/mok/game/goddess/a.a ()I]
+  - Methodref [com/mok/game/goddess/a.a (I)V]
+  - Methodref [com/mok/game/goddess/a.a (Ljava/lang/String;)V]
+  - Methodref [com/mok/game/goddess/a.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+  - Methodref [com/mok/game/goddess/b.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+  - Methodref [com/mok/game/goddess/c.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+  - Methodref [com/mok/game/goddess/d.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+  - Methodref [com/mok/game/goddess/e.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+  - Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  - Methodref [java/io/File.createNewFile ()Z]
+  - Methodref [java/io/File.delete ()Z]
+  - Methodref [java/io/File.exists ()Z]
+  - Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
+  - Methodref [java/io/FileInputStream.available ()I]
+  - Methodref [java/io/FileInputStream.read ([B)I]
+  - Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;Z)V]
+  - Methodref [java/io/FileOutputStream.close ()V]
+  - Methodref [java/io/IOException.printStackTrace ()V]
+  - Methodref [java/io/OutputStreamWriter.<init> (Ljava/io/OutputStream;)V]
+  - Methodref [java/io/OutputStreamWriter.close ()V]
+  - Methodref [java/io/OutputStreamWriter.flush ()V]
+  - Methodref [java/io/OutputStreamWriter.write ([C)V]
+  - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+  - Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
+  - Methodref [java/lang/Exception.printStackTrace ()V]
+  - Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  - Methodref [java/lang/Math.random ()D]
+  - Methodref [java/lang/Math.round (F)I]
+  - Methodref [java/lang/Object.equals (Ljava/lang/Object;)Z]
+  - Methodref [java/lang/String.<init> ([B)V]
+  - Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+  - Methodref [java/lang/String.getBytes ()[B]
+  - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+  - Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
+  - Methodref [java/lang/StringBuilder.<init> ()V]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - Methodref [java/nio/ByteBuffer.allocate (I)Ljava/nio/ByteBuffer;]
+  - Methodref [java/nio/ByteBuffer.flip ()Ljava/nio/Buffer;]
+  - Methodref [java/nio/ByteBuffer.put ([B)Ljava/nio/ByteBuffer;]
+  - Methodref [java/nio/CharBuffer.array ()[C]
+  - Methodref [java/nio/charset/Charset.decode (Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;]
+  - Methodref [java/nio/charset/Charset.forName (Ljava/lang/String;)Ljava/nio/charset/Charset;]
+  - InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+  - NameAndType [<init> ()V]
+  - NameAndType [<init> (II)V]
+  - NameAndType [<init> (Landroid/content/Context;)V]
+  - NameAndType [<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  - NameAndType [<init> (Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Spec;)V]
+  - NameAndType [<init> (Lcom/mok/game/goddess/MainActivity;)V]
+  - NameAndType [<init> (Ljava/io/File;)V]
+  - NameAndType [<init> (Ljava/io/File;Z)V]
+  - NameAndType [<init> (Ljava/io/OutputStream;)V]
+  - NameAndType [<init> (Ljava/lang/String;)V]
+  - NameAndType [<init> ([B)V]
+  - NameAndType [a ()I]
+  - NameAndType [a (I)V]
+  - NameAndType [a (Ljava/lang/String;)V]
+  - NameAndType [a I]
+  - NameAndType [addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - NameAndType [allocate (I)Ljava/nio/ByteBuffer;]
+  - NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  - NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - NameAndType [array ()[C]
+  - NameAndType [available ()I]
+  - NameAndType [b (I)V]
+  - NameAndType [b I]
+  - NameAndType [c ()V]
+  - NameAndType [c (I)V]
+  - NameAndType [c I]
+  - NameAndType [close ()V]
+  - NameAndType [create ()Landroid/app/AlertDialog;]
+  - NameAndType [createNewFile ()Z]
+  - NameAndType [d ()V]
+  - NameAndType [d I]
+  - NameAndType [decode (Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;]
+  - NameAndType [delete ()Z]
+  - NameAndType [e ()V]
+  - NameAndType [e (Ljava/lang/String;Ljava/lang/String;)I]
+  - NameAndType [e Landroid/widget/LinearLayout;]
+  - NameAndType [equals (Ljava/lang/Object;)Z]
+  - NameAndType [exists ()Z]
+  - NameAndType [f ()V]
+  - NameAndType [f Landroid/widget/GridLayout;]
+  - NameAndType [findViewById (I)Landroid/view/View;]
+  - NameAndType [flip ()Ljava/nio/Buffer;]
+  - NameAndType [flush ()V]
+  - NameAndType [forName (Ljava/lang/String;)Ljava/nio/charset/Charset;]
+  - NameAndType [g ()V]
+  - NameAndType [g Landroid/widget/Button;]
+  - NameAndType [getBytes ()[B]
+  - NameAndType [getDefaultDisplay ()Landroid/view/Display;]
+  - NameAndType [getFilesDir ()Ljava/io/File;]
+  - NameAndType [getMessage ()Ljava/lang/String;]
+  - NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  - NameAndType [getText ()Ljava/lang/CharSequence;]
+  - NameAndType [getWidth ()I]
+  - NameAndType [h ()V]
+  - NameAndType [h Landroid/widget/TextView;]
+  - NameAndType [i Landroid/widget/TextView;]
+  - NameAndType [j [Lcom/mok/game/goddess/a;]
+  - NameAndType [k Z]
+  - NameAndType [l I]
+  - NameAndType [m I]
+  - NameAndType [n I]
+  - NameAndType [o I]
+  - NameAndType [onCreate (Landroid/os/Bundle;)V]
+  - NameAndType [onTouchEvent (Landroid/view/MotionEvent;)Z]
+  - NameAndType [out Ljava/io/PrintStream;]
+  - NameAndType [p I]
+  - NameAndType [parseInt (Ljava/lang/String;)I]
+  - NameAndType [printStackTrace ()V]
+  - NameAndType [println (Ljava/lang/String;)V]
+  - NameAndType [put ([B)Ljava/nio/ByteBuffer;]
+  - NameAndType [q Z]
+  - NameAndType [r Z]
+  - NameAndType [random ()D]
+  - NameAndType [read ([B)I]
+  - NameAndType [requestWindowFeature (I)Z]
+  - NameAndType [round (F)I]
+  - NameAndType [s Z]
+  - NameAndType [setColumnCount (I)V]
+  - NameAndType [setContentView (I)V]
+  - NameAndType [setGravity (I)V]
+  - NameAndType [setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+  - NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - NameAndType [setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  - NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - NameAndType [setRowCount (I)V]
+  - NameAndType [setText (I)V]
+  - NameAndType [setText (Ljava/lang/CharSequence;)V]
+  - NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - NameAndType [show ()V]
+  - NameAndType [spec (I)Landroid/widget/GridLayout$Spec;]
+  - NameAndType [t Z]
+  - NameAndType [toString ()Ljava/lang/String;]
+  - NameAndType [trim ()Ljava/lang/String;]
+  - NameAndType [u Z]
+  - NameAndType [v Landroid/view/GestureDetector;]
+  - NameAndType [valueOf (I)Ljava/lang/String;]
+  - NameAndType [w Landroid/view/GestureDetector$OnGestureListener;]
+  - NameAndType [write ([C)V]
+  - Utf8 []
+  - Utf8 [()D]
+  - Utf8 [()I]
+  - Utf8 [()Landroid/app/AlertDialog;]
+  - Utf8 [()Landroid/view/Display;]
+  - Utf8 [()Ljava/io/File;]
+  - Utf8 [()Ljava/lang/CharSequence;]
+  - Utf8 [()Ljava/lang/String;]
+  - Utf8 [()Ljava/nio/Buffer;]
+  - Utf8 [()V]
+  - Utf8 [()Z]
+  - Utf8 [()[B]
+  - Utf8 [()[C]
+  - Utf8 [(F)I]
+  - Utf8 [(I)Landroid/view/View;]
+  - Utf8 [(I)Landroid/widget/GridLayout$Spec;]
+  - Utf8 [(I)Ljava/lang/String;]
+  - Utf8 [(I)Ljava/nio/ByteBuffer;]
+  - Utf8 [(I)V]
+  - Utf8 [(I)Z]
+  - Utf8 [(II)V]
+  - Utf8 [(Landroid/content/Context;)V]
+  - Utf8 [(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  - Utf8 [(Landroid/os/Bundle;)V]
+  - Utf8 [(Landroid/view/MotionEvent;)Z]
+  - Utf8 [(Landroid/view/View$OnClickListener;)V]
+  - Utf8 [(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+  - Utf8 [(Landroid/view/ViewGroup$LayoutParams;)V]
+  - Utf8 [(Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Spec;)V]
+  - Utf8 [(Lcom/mok/game/goddess/MainActivity;)V]
+  - Utf8 [(Ljava/io/File;)V]
+  - Utf8 [(Ljava/io/File;Z)V]
+  - Utf8 [(Ljava/io/OutputStream;)V]
+  - Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Utf8 [(Ljava/lang/CharSequence;)V]
+  - Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  - Utf8 [(Ljava/lang/Object;)Z]
+  - Utf8 [(Ljava/lang/String;)I]
+  - Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  - Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Utf8 [(Ljava/lang/String;)Ljava/nio/charset/Charset;]
+  - Utf8 [(Ljava/lang/String;)V]
+  - Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  - Utf8 [(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;]
+  - Utf8 [([B)I]
+  - Utf8 [([B)Ljava/nio/ByteBuffer;]
+  - Utf8 [([B)V]
+  - Utf8 [([C)V]
+  - Utf8 [/2048]
+  - Utf8 [0]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [ConstantValue]
+  - Utf8 [GAME]
+  - Utf8 [I]
+  - Utf8 [Landroid/view/GestureDetector$OnGestureListener;]
+  - Utf8 [Landroid/view/GestureDetector;]
+  - Utf8 [Landroid/widget/Button;]
+  - Utf8 [Landroid/widget/GridLayout;]
+  - Utf8 [Landroid/widget/LinearLayout;]
+  - Utf8 [Landroid/widget/TextView;]
+  - Utf8 [Ljava/io/PrintStream;]
+  - Utf8 [MainActivity]
+  - Utf8 [OVER]
+  - Utf8 [StackMapTable]
+  - Utf8 [UTF-8]
+  - Utf8 [WIN]
+  - Utf8 [YOU]
+  - Utf8 [Z]
+  - Utf8 [[Lcom/mok/game/goddess/a;]
+  - Utf8 [a]
+  - Utf8 [addView]
+  - Utf8 [allocate]
+  - Utf8 [android/app/Activity]
+  - Utf8 [android/app/AlertDialog]
+  - Utf8 [android/app/AlertDialog$Builder]
+  - Utf8 [android/os/Bundle]
+  - Utf8 [android/util/Log]
+  - Utf8 [android/view/Display]
+  - Utf8 [android/view/GestureDetector]
+  - Utf8 [android/view/WindowManager]
+  - Utf8 [android/widget/Button]
+  - Utf8 [android/widget/FrameLayout$LayoutParams]
+  - Utf8 [android/widget/GridLayout]
+  - Utf8 [android/widget/GridLayout$LayoutParams]
+  - Utf8 [android/widget/LinearLayout]
+  - Utf8 [android/widget/LinearLayout$LayoutParams]
+  - Utf8 [android/widget/TextView]
+  - Utf8 [append]
+  - Utf8 [array]
+  - Utf8 [available]
+  - Utf8 [b]
+  - Utf8 [c]
+  - Utf8 [close]
+  - Utf8 [com/mok/game/goddess/MainActivity]
+  - Utf8 [com/mok/game/goddess/a]
+  - Utf8 [com/mok/game/goddess/b]
+  - Utf8 [com/mok/game/goddess/c]
+  - Utf8 [com/mok/game/goddess/d]
+  - Utf8 [com/mok/game/goddess/e]
+  - Utf8 [create]
+  - Utf8 [createNewFile]
+  - Utf8 [d]
+  - Utf8 [decode]
+  - Utf8 [delete]
+  - Utf8 [e]
+  - Utf8 [equals]
+  - Utf8 [exists]
+  - Utf8 [f]
+  - Utf8 [findViewById]
+  - Utf8 [flip]
+  - Utf8 [flush]
+  - Utf8 [forName]
+  - Utf8 [g]
+  - Utf8 [getBytes]
+  - Utf8 [getDefaultDisplay]
+  - Utf8 [getFilesDir]
+  - Utf8 [getMessage]
+  - Utf8 [getSystemService]
+  - Utf8 [getText]
+  - Utf8 [getWidth]
+  - Utf8 [go bottom]
+  - Utf8 [go left]
+  - Utf8 [go right]
+  - Utf8 [go top]
+  - Utf8 [h]
+  - Utf8 [i]
+  - Utf8 [j]
+  - Utf8 [java/io/File]
+  - Utf8 [java/io/FileInputStream]
+  - Utf8 [java/io/FileOutputStream]
+  - Utf8 [java/io/IOException]
+  - Utf8 [java/io/OutputStreamWriter]
+  - Utf8 [java/io/PrintStream]
+  - Utf8 [java/lang/Exception]
+  - Utf8 [java/lang/Integer]
+  - Utf8 [java/lang/Math]
+  - Utf8 [java/lang/Object]
+  - Utf8 [java/lang/String]
+  - Utf8 [java/lang/StringBuilder]
+  - Utf8 [java/lang/System]
+  - Utf8 [java/lang/Throwable]
+  - Utf8 [java/nio/ByteBuffer]
+  - Utf8 [java/nio/CharBuffer]
+  - Utf8 [java/nio/charset/Charset]
+  - Utf8 [k]
+  - Utf8 [l]
+  - Utf8 [m]
+  - Utf8 [n]
+  - Utf8 [o]
+  - Utf8 [onCreate]
+  - Utf8 [onTouchEvent]
+  - Utf8 [out]
+  - Utf8 [p]
+  - Utf8 [parseInt]
+  - Utf8 [printStackTrace]
+  - Utf8 [println]
+  - Utf8 [put]
+  - Utf8 [q]
+  - Utf8 [r]
+  - Utf8 [random]
+  - Utf8 [read]
+  - Utf8 [requestWindowFeature]
+  - Utf8 [round]
+  - Utf8 [s]
+  - Utf8 [setColumnCount]
+  - Utf8 [setContentView]
+  - Utf8 [setGravity]
+  - Utf8 [setLayoutParams]
+  - Utf8 [setMessage]
+  - Utf8 [setNegativeButton]
+  - Utf8 [setOnClickListener]
+  - Utf8 [setPositiveButton]
+  - Utf8 [setRowCount]
+  - Utf8 [setText]
+  - Utf8 [setTitle]
+  - Utf8 [show]
+  - Utf8 [spec]
+  - Utf8 [t]
+  - Utf8 [toString]
+  - Utf8 [trim]
+  - Utf8 [u]
+  - Utf8 [v]
+  - Utf8 [valueOf]
+  - Utf8 [w]
+  - Utf8 [window]
+  - Utf8 [write]
+  - Utf8 [取消]
+  - Utf8 [提示]
+  - Utf8 [确认]
+  - Utf8 [确认要重新玩吗？]
+
+Fields (count = 23):
+  - Field:        a I
+    Access flags: 0x10
+      = final int a
+    Class member attributes (count = 1):
+    - Constant value attribute:
+    - Integer [0]
+  - Field:        b I
+    Access flags: 0x10
+      = final int b
+    Class member attributes (count = 1):
+    - Constant value attribute:
+    - Integer [1]
+  - Field:        c I
+    Access flags: 0x10
+      = final int c
+    Class member attributes (count = 1):
+    - Constant value attribute:
+    - Integer [2]
+  - Field:        d I
+    Access flags: 0x10
+      = final int d
+    Class member attributes (count = 1):
+    - Constant value attribute:
+    - Integer [3]
+  - Field:        v Landroid/view/GestureDetector;
+    Access flags: 0x2
+      = private android.view.GestureDetector v
+  - Field:        e Landroid/widget/LinearLayout;
+    Access flags: 0x0
+      = android.widget.LinearLayout e
+  - Field:        f Landroid/widget/GridLayout;
+    Access flags: 0x0
+      = android.widget.GridLayout f
+  - Field:        g Landroid/widget/Button;
+    Access flags: 0x0
+      = android.widget.Button g
+  - Field:        h Landroid/widget/TextView;
+    Access flags: 0x0
+      = android.widget.TextView h
+  - Field:        i Landroid/widget/TextView;
+    Access flags: 0x0
+      = android.widget.TextView i
+  - Field:        j [Lcom/mok/game/goddess/a;
+    Access flags: 0x0
+      = com.mok.game.goddess.a[] j
+  - Field:        k Z
+    Access flags: 0x0
+      = boolean k
+  - Field:        l I
+    Access flags: 0x0
+      = int l
+  - Field:        m I
+    Access flags: 0x0
+      = int m
+  - Field:        n I
+    Access flags: 0x0
+      = int n
+  - Field:        o I
+    Access flags: 0x0
+      = int o
+  - Field:        p I
+    Access flags: 0x0
+      = int p
+  - Field:        q Z
+    Access flags: 0x0
+      = boolean q
+  - Field:        r Z
+    Access flags: 0x0
+      = boolean r
+  - Field:        s Z
+    Access flags: 0x0
+      = boolean s
+  - Field:        t Z
+    Access flags: 0x0
+      = boolean t
+  - Field:        u Z
+    Access flags: 0x0
+      = boolean u
+  - Field:        w Landroid/view/GestureDetector$OnGestureListener;
+    Access flags: 0x2
+      = private android.view.GestureDetector$OnGestureListener w
+
+Methods (count = 14):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MainActivity()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 85, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #94
+        - Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #70
+        - Fieldref [com/mok/game/goddess/MainActivity.a I]
+      [9] aload_0 v0
+      [10] iconst_1
+      [11] putfield #71
+        - Fieldref [com/mok/game/goddess/MainActivity.b I]
+      [14] aload_0 v0
+      [15] iconst_2
+      [16] putfield #72
+        - Fieldref [com/mok/game/goddess/MainActivity.c I]
+      [19] aload_0 v0
+      [20] iconst_3
+      [21] putfield #73
+        - Fieldref [com/mok/game/goddess/MainActivity.d I]
+      [24] aload_0 v0
+      [25] bipush 25
+      [27] putfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [30] aload_0 v0
+      [31] iconst_5
+      [32] putfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [35] aload_0 v0
+      [36] sipush 8192
+      [39] putfield #83
+        - Fieldref [com/mok/game/goddess/MainActivity.n I]
+      [42] aload_0 v0
+      [43] iconst_0
+      [44] putfield #85
+        - Fieldref [com/mok/game/goddess/MainActivity.p I]
+      [47] aload_0 v0
+      [48] iconst_0
+      [49] putfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [52] aload_0 v0
+      [53] iconst_1
+      [54] putfield #87
+        - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+      [57] aload_0 v0
+      [58] iconst_1
+      [59] putfield #88
+        - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+      [62] aload_0 v0
+      [63] iconst_1
+      [64] putfield #89
+        - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+      [67] aload_0 v0
+      [68] iconst_1
+      [69] putfield #90
+        - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+      [72] aload_0 v0
+      [73] new #47
+        - Class [com/mok/game/goddess/b]
+      [76] dup
+      [77] aload_0 v0
+      [78] invokespecial #138
+        - Methodref [com/mok/game/goddess/b.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+      [81] putfield #92
+        - Fieldref [com/mok/game/goddess/MainActivity.w Landroid/view/GestureDetector$OnGestureListener;]
+      [84] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 372, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] iconst_1
+      [2] invokevirtual #131
+        - Methodref [com/mok/game/goddess/MainActivity.requestWindowFeature (I)Z]
+      [5] pop
+      [6] aload_0 v0
+      [7] aload_1 v1
+      [8] invokespecial #95
+        - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [11] aload_0 v0
+      [12] ldc #5
+        - Integer [2130903041]
+      [14] invokevirtual #132
+        - Methodref [com/mok/game/goddess/MainActivity.setContentView (I)V]
+      [17] aload_0 v0
+      [18] dup
+      [19] astore_1 v1
+      [20] aload_1 v1
+      [21] ldc #7
+        - Integer [2131296259]
+      [23] invokevirtual #126
+        - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+      [26] checkcast #42
+        - Class [android/widget/LinearLayout]
+      [29] putfield #74
+        - Fieldref [com/mok/game/goddess/MainActivity.e Landroid/widget/LinearLayout;]
+      [32] aload_1 v1
+      [33] aload_1 v1
+      [34] ldc #8
+        - Integer [2131296260]
+      [36] invokevirtual #126
+        - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+      [39] checkcast #40
+        - Class [android/widget/GridLayout]
+      [42] putfield #75
+        - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+      [45] aload_1 v1
+      [46] aload_1 v1
+      [47] ldc #11
+        - Integer [2131296263]
+      [49] invokevirtual #126
+        - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+      [52] checkcast #38
+        - Class [android/widget/Button]
+      [55] putfield #76
+        - Fieldref [com/mok/game/goddess/MainActivity.g Landroid/widget/Button;]
+      [58] aload_1 v1
+      [59] aload_1 v1
+      [60] ldc #9
+        - Integer [2131296261]
+      [62] invokevirtual #126
+        - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+      [65] checkcast #44
+        - Class [android/widget/TextView]
+      [68] putfield #77
+        - Fieldref [com/mok/game/goddess/MainActivity.h Landroid/widget/TextView;]
+      [71] aload_1 v1
+      [72] aload_1 v1
+      [73] ldc #10
+        - Integer [2131296262]
+      [75] invokevirtual #126
+        - Methodref [com/mok/game/goddess/MainActivity.findViewById (I)Landroid/view/View;]
+      [78] checkcast #44
+        - Class [android/widget/TextView]
+      [81] putfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [84] aload_0 v0
+      [85] dup
+      [86] astore_1 v1
+      [87] iconst_1
+      [88] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [91] aload_1 v1
+      [92] iconst_1
+      [93] putfield #87
+        - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+      [96] aload_1 v1
+      [97] iconst_1
+      [98] putfield #88
+        - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+      [101] aload_1 v1
+      [102] iconst_1
+      [103] putfield #89
+        - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+      [106] aload_1 v1
+      [107] iconst_1
+      [108] putfield #90
+        - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+      [111] new #43
+        - Class [android/widget/LinearLayout$LayoutParams]
+      [114] dup
+      [115] iconst_m1
+      [116] bipush -2
+      [118] invokespecial #117
+        - Methodref [android/widget/LinearLayout$LayoutParams.<init> (II)V]
+      [121] astore_2 v2
+      [122] aload_1 v1
+      [123] getfield #75
+        - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+      [126] aload_1 v1
+      [127] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [130] invokevirtual #111
+        - Methodref [android/widget/GridLayout.setColumnCount (I)V]
+      [133] aload_1 v1
+      [134] getfield #75
+        - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+      [137] aload_1 v1
+      [138] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [141] invokevirtual #113
+        - Methodref [android/widget/GridLayout.setRowCount (I)V]
+      [144] aload_1 v1
+      [145] getfield #75
+        - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+      [148] aload_2 v2
+      [149] invokevirtual #112
+        - Methodref [android/widget/GridLayout.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+      [152] aload_1 v1
+      [153] ldc #25
+        - String [window]
+      [155] invokevirtual #129
+        - Methodref [com/mok/game/goddess/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [158] checkcast #37
+        - Class [android/view/WindowManager]
+      [161] dup
+      [162] astore_2 v2
+      [163] invokeinterface #178
+        - InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [168] invokevirtual #104
+        - Methodref [android/view/Display.getWidth ()I]
+      [171] istore_2 v2
+      [172] aload_1 v1
+      [173] iload_2 v2
+      [174] aload_1 v1
+      [175] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [178] idiv
+      [179] i2f
+      [180] invokestatic #161
+        - Methodref [java/lang/Math.round (F)I]
+      [183] putfield #84
+        - Fieldref [com/mok/game/goddess/MainActivity.o I]
+      [186] aload_1 v1
+      [187] aload_1 v1
+      [188] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [191] anewarray #46
+        - Class [com/mok/game/goddess/a]
+      [194] putfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [197] aload_1 v1
+      [198] invokespecial #121
+        - Methodref [com/mok/game/goddess/MainActivity.c ()V]
+      [201] iconst_0
+      [202] istore_2 v2
+      [203] goto +10 (target=213)
+      [206] aload_1 v1
+      [207] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [210] iinc v2, 1
+      [213] iload_2 v2
+      [214] iconst_2
+      [215] ificmplt -9 (target=206)
+      [218] aload_1 v1
+      [219] dup
+      [220] astore_2 v2
+      [221] getfield #76
+        - Fieldref [com/mok/game/goddess/MainActivity.g Landroid/widget/Button;]
+      [224] new #48
+        - Class [com/mok/game/goddess/c]
+      [227] dup
+      [228] aload_2 v2
+      [229] invokespecial #139
+        - Methodref [com/mok/game/goddess/c.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+      [232] invokevirtual #107
+        - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [235] new #51
+        - Class [java/io/File]
+      [238] dup
+      [239] new #62
+        - Class [java/lang/StringBuilder]
+      [242] dup
+      [243] invokespecial #168
+        - Methodref [java/lang/StringBuilder.<init> ()V]
+      [246] aload_1 v1
+      [247] invokevirtual #128
+        - Methodref [com/mok/game/goddess/MainActivity.getFilesDir ()Ljava/io/File;]
+      [250] invokevirtual #169
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [253] ldc #13
+        - String [/2048]
+      [255] invokevirtual #170
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [258] invokevirtual #171
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [261] invokespecial #142
+        - Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [264] astore_2 v2
+      [265] aload_2 v2
+      [266] invokevirtual #145
+        - Methodref [java/io/File.exists ()Z]
+      [269] ifne +11 (target=280)
+      [272] aload_2 v2
+      [273] invokevirtual #143
+        - Methodref [java/io/File.createNewFile ()Z]
+      [276] pop
+      [277] goto +54 (target=331)
+      [280] new #52
+        - Class [java/io/FileInputStream]
+      [283] dup
+      [284] aload_2 v2
+      [285] invokespecial #146
+        - Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
+      [288] dup
+      [289] astore_2 v2
+      [290] invokevirtual #147
+        - Methodref [java/io/FileInputStream.available ()I]
+      [293] newarray 8
+      [295] astore_3 v3
+      [296] aload_2 v2
+      [297] aload_3 v3
+      [298] invokevirtual #148
+        - Methodref [java/io/FileInputStream.read ([B)I]
+      [301] pop
+      [302] aload_1 v1
+      [303] getfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [306] new #61
+        - Class [java/lang/String]
+      [309] dup
+      [310] aload_3 v3
+      [311] invokespecial #163
+        - Methodref [java/lang/String.<init> ([B)V]
+      [314] invokevirtual #119
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [317] goto +14 (target=331)
+      [320] astore_2 v2
+      [321] ldc #16
+        - String [MainActivity]
+      [323] aload_2 v2
+      [324] invokevirtual #157
+        - Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
+      [327] invokestatic #103
+        - Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+      [330] pop
+      [331] aload_1 v1
+      [332] getfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [335] invokevirtual #118
+        - Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [338] ldc #12
+        - String []
+      [340] invokevirtual #162
+        - Methodref [java/lang/Object.equals (Ljava/lang/Object;)Z]
+      [343] ifeq +12 (target=355)
+      [346] aload_1 v1
+      [347] getfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [350] ldc #14
+        - String [0]
+      [352] invokevirtual #119
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [355] aload_0 v0
+      [356] new #36
+        - Class [android/view/GestureDetector]
+      [359] dup
+      [360] aload_0 v0
+      [361] aload_0 v0
+      [362] getfield #92
+        - Fieldref [com/mok/game/goddess/MainActivity.w Landroid/view/GestureDetector$OnGestureListener;]
+      [365] invokespecial #105
+        - Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+      [368] putfield #91
+        - Fieldref [com/mok/game/goddess/MainActivity.v Landroid/view/GestureDetector;]
+      [371] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (265 -> 317: 320):
+      - Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 6):
+        - [206] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i], Stack: 
+        - [213] Var: ..., Stack: (empty)
+        - [280] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][a:java/io/File], Stack: 
+        - [320] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity], Stack: [a:java/lang/Exception]
+        - [331] Var: ..., Stack: (empty)
+        - [355] Var: -1, Stack: (empty)
+  - Method:       c()V
+    Access flags: 0x2
+      = private void c()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 101, locals = 4, stack = 5):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] goto +90 (target=92)
+      [5] aload_0 v0
+      [6] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [9] iload_1 v1
+      [10] new #46
+        - Class [com/mok/game/goddess/a]
+      [13] dup
+      [14] aload_0 v0
+      [15] invokespecial #133
+        - Methodref [com/mok/game/goddess/a.<init> (Landroid/content/Context;)V]
+      [18] aastore
+      [19] new #39
+        - Class [android/widget/FrameLayout$LayoutParams]
+      [22] dup
+      [23] aload_0 v0
+      [24] getfield #84
+        - Fieldref [com/mok/game/goddess/MainActivity.o I]
+      [27] aload_0 v0
+      [28] getfield #84
+        - Fieldref [com/mok/game/goddess/MainActivity.o I]
+      [31] invokespecial #109
+        - Methodref [android/widget/FrameLayout$LayoutParams.<init> (II)V]
+      [34] astore_2 v2
+      [35] aload_0 v0
+      [36] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [39] iload_1 v1
+      [40] aaload
+      [41] aload_2 v2
+      [42] invokevirtual #137
+        - Methodref [com/mok/game/goddess/a.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+      [45] iload_1 v1
+      [46] iconst_5
+      [47] idiv
+      [48] invokestatic #114
+        - Methodref [android/widget/GridLayout.spec (I)Landroid/widget/GridLayout$Spec;]
+      [51] astore_2 v2
+      [52] iload_1 v1
+      [53] iconst_5
+      [54] irem
+      [55] invokestatic #114
+        - Methodref [android/widget/GridLayout.spec (I)Landroid/widget/GridLayout$Spec;]
+      [58] astore_3 v3
+      [59] new #41
+        - Class [android/widget/GridLayout$LayoutParams]
+      [62] dup
+      [63] aload_2 v2
+      [64] aload_3 v3
+      [65] invokespecial #115
+        - Methodref [android/widget/GridLayout$LayoutParams.<init> (Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Spec;)V]
+      [68] dup
+      [69] astore_2 v2
+      [70] bipush 119
+      [72] invokevirtual #116
+        - Methodref [android/widget/GridLayout$LayoutParams.setGravity (I)V]
+      [75] aload_0 v0
+      [76] getfield #75
+        - Fieldref [com/mok/game/goddess/MainActivity.f Landroid/widget/GridLayout;]
+      [79] aload_0 v0
+      [80] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [83] iload_1 v1
+      [84] aaload
+      [85] aload_2 v2
+      [86] invokevirtual #110
+        - Methodref [android/widget/GridLayout.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+      [89] iinc v1, 1
+      [92] iload_1 v1
+      [93] aload_0 v0
+      [94] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [97] ificmplt -92 (target=5)
+      [100] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 2):
+        - [5] Var: ...[i], Stack: (empty)
+        - [92] Var: ..., Stack: (empty)
+  - Method:       d()V
+    Access flags: 0x2
+      = private void d()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 66, locals = 2, stack = 4):
+      [0] goto +58 (target=58)
+      [3] invokestatic #160
+        - Methodref [java/lang/Math.random ()D]
+      [6] aload_0 v0
+      [7] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [10] i2d
+      [11] dmul
+      [12] d2i
+      [13] istore_1 v1
+      [14] aload_0 v0
+      [15] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [18] iload_1 v1
+      [19] aaload
+      [20] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [23] ifne +35 (target=58)
+      [26] invokestatic #160
+        - Methodref [java/lang/Math.random ()D]
+      [29] ldc2_w #68
+        - Double [0.5]
+      [32] dcmpg
+      [33] ifge +14 (target=47)
+      [36] aload_0 v0
+      [37] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [40] iload_1 v1
+      [41] aaload
+      [42] iconst_2
+      [43] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [46] return
+      [47] aload_0 v0
+      [48] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [51] iload_1 v1
+      [52] aaload
+      [53] iconst_4
+      [54] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [57] return
+      [58] aload_0 v0
+      [59] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [62] ifne -59 (target=3)
+      [65] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 3):
+        - [3] Var: ..., Stack: (empty)
+        - [47] Var: ...[i], Stack: (empty)
+        - [58] Var: -1, Stack: (empty)
+  - Method:       e()V
+    Access flags: 0x2
+      = private void e()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 47, locals = 3, stack = 2):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] iconst_0
+      [3] istore_2 v2
+      [4] goto +21 (target=25)
+      [7] aload_0 v0
+      [8] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [11] iload_2 v2
+      [12] aaload
+      [13] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [16] ifeq +6 (target=22)
+      [19] iinc v1, 1
+      [22] iinc v2, 1
+      [25] iload_2 v2
+      [26] aload_0 v0
+      [27] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [30] ificmplt -23 (target=7)
+      [33] iload_1 v1
+      [34] aload_0 v0
+      [35] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [38] ificmpne +8 (target=46)
+      [41] aload_0 v0
+      [42] iconst_0
+      [43] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [46] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 4):
+        - [7] Var: ...[i][i], Stack: (empty)
+        - [22] Var: ..., Stack: (empty)
+        - [25] Var: ..., Stack: (empty)
+        - [46] Var: -3, Stack: (empty)
+  - Method:       b(I)V
+    Access flags: 0x2
+      = private void b(int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 81, locals = 2, stack = 2):
+      [0] iload_1 v1
+      [1] tableswitch (5 offsets, default=79) (target=80)
+        0: offset = 35, target = 36
+        1: offset = 56, target = 57
+        2: offset = 62, target = 63
+        3: offset = 68, target = 69
+        4: offset = 74, target = 75
+        default: offset = 79, target = 80
+      [36] aload_0 v0
+      [37] iconst_1
+      [38] putfield #87
+        - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+      [41] aload_0 v0
+      [42] iconst_1
+      [43] putfield #88
+        - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+      [46] aload_0 v0
+      [47] iconst_1
+      [48] putfield #89
+        - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+      [51] aload_0 v0
+      [52] iconst_1
+      [53] putfield #90
+        - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+      [56] return
+      [57] aload_0 v0
+      [58] iconst_0
+      [59] putfield #87
+        - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+      [62] return
+      [63] aload_0 v0
+      [64] iconst_0
+      [65] putfield #88
+        - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+      [68] return
+      [69] aload_0 v0
+      [70] iconst_0
+      [71] putfield #89
+        - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+      [74] return
+      [75] aload_0 v0
+      [76] iconst_0
+      [77] putfield #90
+        - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+      [80] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 6):
+        - [36] Var: -1, Stack: (empty)
+        - [57] Var: ..., Stack: (empty)
+        - [63] Var: ..., Stack: (empty)
+        - [69] Var: ..., Stack: (empty)
+        - [75] Var: ..., Stack: (empty)
+        - [80] Var: -1, Stack: (empty)
+  - Method:       f()V
+    Access flags: 0x2
+      = private void f()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 120, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [4] ifne +115 (target=119)
+      [7] aload_0 v0
+      [8] getfield #89
+        - Fieldref [com/mok/game/goddess/MainActivity.t Z]
+      [11] ifne +108 (target=119)
+      [14] aload_0 v0
+      [15] getfield #90
+        - Fieldref [com/mok/game/goddess/MainActivity.u Z]
+      [18] ifne +101 (target=119)
+      [21] aload_0 v0
+      [22] getfield #87
+        - Fieldref [com/mok/game/goddess/MainActivity.r Z]
+      [25] ifne +94 (target=119)
+      [28] aload_0 v0
+      [29] getfield #88
+        - Fieldref [com/mok/game/goddess/MainActivity.s Z]
+      [32] ifne +87 (target=119)
+      [35] aload_0 v0
+      [36] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [39] aload_0 v0
+      [40] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [43] iconst_2
+      [44] iadd
+      [45] aaload
+      [46] iconst_0
+      [47] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [50] aload_0 v0
+      [51] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [54] aload_0 v0
+      [55] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [58] iconst_2
+      [59] imul
+      [60] iconst_2
+      [61] iadd
+      [62] aaload
+      [63] iconst_0
+      [64] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [67] aload_0 v0
+      [68] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [71] aload_0 v0
+      [72] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [75] iconst_2
+      [76] iadd
+      [77] aaload
+      [78] ldc #15
+        - String [GAME]
+      [80] invokevirtual #136
+        - Methodref [com/mok/game/goddess/a.a (Ljava/lang/String;)V]
+      [83] aload_0 v0
+      [84] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [87] aload_0 v0
+      [88] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [91] iconst_2
+      [92] imul
+      [93] iconst_2
+      [94] iadd
+      [95] aaload
+      [96] ldc #17
+        - String [OVER]
+      [98] invokevirtual #136
+        - Methodref [com/mok/game/goddess/a.a (Ljava/lang/String;)V]
+      [101] aload_0 v0
+      [102] getfield #76
+        - Fieldref [com/mok/game/goddess/MainActivity.g Landroid/widget/Button;]
+      [105] ldc #6
+        - Integer [2131165186]
+      [107] invokevirtual #108
+        - Methodref [android/widget/Button.setText (I)V]
+      [110] aload_0 v0
+      [111] invokespecial #130
+        - Methodref [com/mok/game/goddess/MainActivity.h ()V]
+      [114] aload_0 v0
+      [115] iconst_1
+      [116] putfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [119] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 1):
+        - [119] Var: -1, Stack: (empty)
+  - Method:       g()V
+    Access flags: 0x2
+      = private void g()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 80, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [4] aload_0 v0
+      [5] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [8] iconst_2
+      [9] iadd
+      [10] aaload
+      [11] iconst_0
+      [12] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [15] aload_0 v0
+      [16] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [19] aload_0 v0
+      [20] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [23] iconst_2
+      [24] imul
+      [25] iconst_2
+      [26] iadd
+      [27] aaload
+      [28] iconst_0
+      [29] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [32] aload_0 v0
+      [33] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [36] aload_0 v0
+      [37] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [40] iconst_2
+      [41] iadd
+      [42] aaload
+      [43] ldc #20
+        - String [YOU]
+      [45] invokevirtual #136
+        - Methodref [com/mok/game/goddess/a.a (Ljava/lang/String;)V]
+      [48] aload_0 v0
+      [49] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [52] aload_0 v0
+      [53] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [56] iconst_2
+      [57] imul
+      [58] iconst_2
+      [59] iadd
+      [60] aaload
+      [61] ldc #19
+        - String [WIN]
+      [63] invokevirtual #136
+        - Methodref [com/mok/game/goddess/a.a (Ljava/lang/String;)V]
+      [66] aload_0 v0
+      [67] getfield #76
+        - Fieldref [com/mok/game/goddess/MainActivity.g Landroid/widget/Button;]
+      [70] ldc #6
+        - Integer [2131165186]
+      [72] invokevirtual #108
+        - Methodref [android/widget/Button.setText (I)V]
+      [75] aload_0 v0
+      [76] invokespecial #130
+        - Methodref [com/mok/game/goddess/MainActivity.h ()V]
+      [79] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       a()V
+    Access flags: 0x11
+      = public final void a()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 64, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iconst_0
+      [2] putfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [5] aload_0 v0
+      [6] iconst_1
+      [7] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [10] aload_0 v0
+      [11] iconst_0
+      [12] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [15] iconst_0
+      [16] istore_1 v1
+      [17] goto +16 (target=33)
+      [20] aload_0 v0
+      [21] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [24] iload_1 v1
+      [25] aaload
+      [26] iconst_0
+      [27] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [30] iinc v1, 1
+      [33] iload_1 v1
+      [34] aload_0 v0
+      [35] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [38] ificmplt -18 (target=20)
+      [41] iconst_0
+      [42] istore_1 v1
+      [43] goto +10 (target=53)
+      [46] aload_0 v0
+      [47] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [50] iinc v1, 1
+      [53] iload_1 v1
+      [54] iconst_2
+      [55] ificmplt -9 (target=46)
+      [58] aload_0 v0
+      [59] iconst_0
+      [60] invokespecial #122
+        - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+      [63] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 4):
+        - [20] Var: ...[i], Stack: (empty)
+        - [33] Var: ..., Stack: (empty)
+        - [46] Var: ..., Stack: (empty)
+        - [53] Var: ..., Stack: (empty)
+  - Method:       c(I)V
+    Access flags: 0x2
+      = private void c(int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 37, locals = 2, stack = 3):
+      [0] iload_1 v1
+      [1] ifne +11 (target=12)
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #85
+        - Fieldref [com/mok/game/goddess/MainActivity.p I]
+      [9] goto +13 (target=22)
+      [12] aload_0 v0
+      [13] dup
+      [14] getfield #85
+        - Fieldref [com/mok/game/goddess/MainActivity.p I]
+      [17] iload_1 v1
+      [18] iadd
+      [19] putfield #85
+        - Fieldref [com/mok/game/goddess/MainActivity.p I]
+      [22] aload_0 v0
+      [23] getfield #77
+        - Fieldref [com/mok/game/goddess/MainActivity.h Landroid/widget/TextView;]
+      [26] aload_0 v0
+      [27] getfield #85
+        - Fieldref [com/mok/game/goddess/MainActivity.p I]
+      [30] invokestatic #167
+        - Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
+      [33] invokevirtual #119
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [36] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 2):
+        - [12] Var: ..., Stack: (empty)
+        - [22] Var: -1, Stack: (empty)
+  - Method:       h()V
+    Access flags: 0x2
+      = private void h()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 243, locals = 6, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [4] invokevirtual #118
+        - Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [7] checkcast #61
+        - Class [java/lang/String]
+      [10] dup
+      [11] astore_1 v1
+      [12] invokevirtual #166
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [15] astore_1 v1
+      [16] aload_0 v0
+      [17] getfield #77
+        - Fieldref [com/mok/game/goddess/MainActivity.h Landroid/widget/TextView;]
+      [20] invokevirtual #118
+        - Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [23] checkcast #61
+        - Class [java/lang/String]
+      [26] astore_2 v2
+      [27] aload_1 v1
+      [28] ldc #14
+        - String [0]
+      [30] invokevirtual #164
+        - Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+      [33] ifne +14 (target=47)
+      [36] aload_1 v1
+      [37] invokestatic #159
+        - Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [40] aload_2 v2
+      [41] invokestatic #159
+        - Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [44] ificmpge +198 (target=242)
+      [47] aload_0 v0
+      [48] getfield #78
+        - Fieldref [com/mok/game/goddess/MainActivity.i Landroid/widget/TextView;]
+      [51] aload_2 v2
+      [52] invokevirtual #119
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [55] new #62
+        - Class [java/lang/StringBuilder]
+      [58] dup
+      [59] invokespecial #168
+        - Methodref [java/lang/StringBuilder.<init> ()V]
+      [62] aload_0 v0
+      [63] invokevirtual #128
+        - Methodref [com/mok/game/goddess/MainActivity.getFilesDir ()Ljava/io/File;]
+      [66] invokevirtual #169
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [69] ldc #13
+        - String [/2048]
+      [71] invokevirtual #170
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [74] invokevirtual #171
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [77] astore_1 v1
+      [78] aload_2 v2
+      [79] astore_2 v2
+      [80] aconst_null
+      [81] astore_3 v3
+      [82] aconst_null
+      [83] astore v4
+      [85] new #51
+        - Class [java/io/File]
+      [88] dup
+      [89] aload_1 v1
+      [90] invokespecial #142
+        - Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [93] dup
+      [94] astore_1 v1
+      [95] invokevirtual #145
+        - Methodref [java/io/File.exists ()Z]
+      [98] ifeq +8 (target=106)
+      [101] aload_1 v1
+      [102] invokevirtual #144
+        - Methodref [java/io/File.delete ()Z]
+      [105] pop
+      [106] aload_1 v1
+      [107] invokevirtual #143
+        - Methodref [java/io/File.createNewFile ()Z]
+      [110] pop
+      [111] aload_2 v2
+      [112] invokevirtual #165
+        - Methodref [java/lang/String.getBytes ()[B]
+      [115] astore_2 v2
+      [116] new #53
+        - Class [java/io/FileOutputStream]
+      [119] dup
+      [120] aload_1 v1
+      [121] iconst_1
+      [122] invokespecial #149
+        - Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;Z)V]
+      [125] astore_3 v3
+      [126] new #55
+        - Class [java/io/OutputStreamWriter]
+      [129] dup
+      [130] aload_3 v3
+      [131] invokespecial #152
+        - Methodref [java/io/OutputStreamWriter.<init> (Ljava/io/OutputStream;)V]
+      [134] dup
+      [135] astore v4
+      [137] aload_2 v2
+      [138] astore_1 v1
+      [139] ldc #18
+        - String [UTF-8]
+      [141] invokestatic #177
+        - Methodref [java/nio/charset/Charset.forName (Ljava/lang/String;)Ljava/nio/charset/Charset;]
+      [144] astore_2 v2
+      [145] aload_1 v1
+      [146] arraylength
+      [147] invokestatic #172
+        - Methodref [java/nio/ByteBuffer.allocate (I)Ljava/nio/ByteBuffer;]
+      [150] dup
+      [151] astore v5
+      [153] aload_1 v1
+      [154] invokevirtual #174
+        - Methodref [java/nio/ByteBuffer.put ([B)Ljava/nio/ByteBuffer;]
+      [157] pop
+      [158] aload v5
+      [160] invokevirtual #173
+        - Methodref [java/nio/ByteBuffer.flip ()Ljava/nio/Buffer;]
+      [163] pop
+      [164] aload_2 v2
+      [165] aload v5
+      [167] invokevirtual #176
+        - Methodref [java/nio/charset/Charset.decode (Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;]
+      [170] dup
+      [171] astore_1 v1
+      [172] invokevirtual #175
+        - Methodref [java/nio/CharBuffer.array ()[C]
+      [175] invokevirtual #155
+        - Methodref [java/io/OutputStreamWriter.write ([C)V]
+      [178] aload v4
+      [180] invokevirtual #154
+        - Methodref [java/io/OutputStreamWriter.flush ()V]
+      [183] goto +44 (target=227)
+      [186] dup
+      [187] astore_1 v1
+      [188] invokevirtual #158
+        - Methodref [java/lang/Exception.printStackTrace ()V]
+      [191] aload v4
+      [193] invokevirtual #153
+        - Methodref [java/io/OutputStreamWriter.close ()V]
+      [196] aload_3 v3
+      [197] invokevirtual #150
+        - Methodref [java/io/FileOutputStream.close ()V]
+      [200] return
+      [201] dup
+      [202] astore_2 v2
+      [203] invokevirtual #151
+        - Methodref [java/io/IOException.printStackTrace ()V]
+      [206] return
+      [207] astore_1 v1
+      [208] aload v4
+      [210] invokevirtual #153
+        - Methodref [java/io/OutputStreamWriter.close ()V]
+      [213] aload_3 v3
+      [214] invokevirtual #150
+        - Methodref [java/io/FileOutputStream.close ()V]
+      [217] goto +8 (target=225)
+      [220] dup
+      [221] astore_2 v2
+      [222] invokevirtual #151
+        - Methodref [java/io/IOException.printStackTrace ()V]
+      [225] aload_1 v1
+      [226] athrow
+      [227] aload v4
+      [229] invokevirtual #153
+        - Methodref [java/io/OutputStreamWriter.close ()V]
+      [232] aload_3 v3
+      [233] invokevirtual #150
+        - Methodref [java/io/FileOutputStream.close ()V]
+      [236] return
+      [237] dup
+      [238] astore_2 v2
+      [239] invokevirtual #151
+        - Methodref [java/io/IOException.printStackTrace ()V]
+      [242] return
+      Code attribute exceptions (count = 5):
+      - ExceptionInfo (85 -> 183: 186):
+      - Class [java/lang/Exception]
+      - ExceptionInfo (191 -> 200: 201):
+      - Class [java/io/IOException]
+      - ExceptionInfo (85 -> 191: 207):
+      - ExceptionInfo (208 -> 217: 220):
+      - Class [java/io/IOException]
+      - ExceptionInfo (227 -> 236: 237):
+      - Class [java/io/IOException]
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 10):
+        - [47] Var: ...[T][a:java/lang/String], Stack: (empty)
+        - [106] Var: [T][a:java/io/File][a:java/lang/String][n][n], Stack: 
+        - [186] Var: [T][T][T][a:java/io/FileOutputStream][a:java/io/OutputStreamWriter], Stack: [a:java/lang/Exception]
+        - [201] Var: , Stack: [a:java/io/IOException]
+        - [207] Var: [T][T][T][a:java/io/FileOutputStream][a:java/io/OutputStreamWriter], Stack: [a:java/lang/Throwable]
+        - [220] Var: [T][a:java/lang/Throwable], Stack: [a:java/io/IOException]
+        - [225] Var: ..., Stack: (empty)
+        - [227] Var: [T][T][T][a:java/io/FileOutputStream][a:java/io/OutputStreamWriter], Stack: 
+        - [237] Var: , Stack: [a:java/io/IOException]
+        - [242] Var: ..., Stack: (empty)
+  - Method:       b()V
+    Access flags: 0x14
+      = protected final void b()
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 59, locals = 2, stack = 5):
+      [0] new #32
+        - Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokespecial #97
+        - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [8] dup
+      [9] astore_1 v1
+      [10] ldc #29
+        - String [确认要重新玩吗？]
+      [12] invokevirtual #99
+        - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [15] pop
+      [16] aload_1 v1
+      [17] ldc #27
+        - String [提示]
+      [19] invokevirtual #102
+        - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [22] pop
+      [23] aload_1 v1
+      [24] ldc #26
+        - String [取消]
+      [26] new #49
+        - Class [com/mok/game/goddess/d]
+      [29] dup
+      [30] aload_0 v0
+      [31] invokespecial #140
+        - Methodref [com/mok/game/goddess/d.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+      [34] invokevirtual #100
+        - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [37] ldc #28
+        - String [确认]
+      [39] new #50
+        - Class [com/mok/game/goddess/e]
+      [42] dup
+      [43] aload_0 v0
+      [44] invokespecial #141
+        - Methodref [com/mok/game/goddess/e.<init> (Lcom/mok/game/goddess/MainActivity;)V]
+      [47] invokevirtual #101
+        - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [50] pop
+      [51] aload_1 v1
+      [52] invokevirtual #98
+        - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [55] invokevirtual #96
+        - Methodref [android/app/AlertDialog.show ()V]
+      [58] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onTouchEvent(Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onTouchEvent(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #91
+        - Fieldref [com/mok/game/goddess/MainActivity.v Landroid/view/GestureDetector;]
+      [4] aload_1 v1
+      [5] invokevirtual #106
+        - Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+      [8] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       a(I)V
+    Access flags: 0x11
+      = public final void a(int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 928, locals = 7, stack = 5):
+      [0] iload_1 v1
+      [1] tableswitch (4 offsets, default=926) (target=927)
+        0: offset = 31, target = 32
+        1: offset = 251, target = 252
+        2: offset = 694, target = 695
+        3: offset = 471, target = 472
+        default: offset = 926, target = 927
+      [32] getstatic #93
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [35] ldc #23
+        - String [go right]
+      [37] invokevirtual #156
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [40] aload_0 v0
+      [41] dup
+      [42] astore_1 v1
+      [43] getfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [46] ifne +193 (target=239)
+      [49] iconst_0
+      [50] istore_2 v2
+      [51] goto +173 (target=224)
+      [54] iload_2 v2
+      [55] istore_3 v3
+      [56] iload_2 v2
+      [57] iconst_1
+      [58] iadd
+      [59] istore v4
+      [61] goto +143 (target=204)
+      [64] aload_1 v1
+      [65] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [68] iload_3 v3
+      [69] aaload
+      [70] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [73] istore v5
+      [75] aload_1 v1
+      [76] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [79] iload v4
+      [81] aaload
+      [82] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [85] dup
+      [86] istore v6
+      [88] ifne +28 (target=116)
+      [91] aload_1 v1
+      [92] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [95] iload_3 v3
+      [96] aaload
+      [97] iconst_0
+      [98] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [101] aload_1 v1
+      [102] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [105] iload v4
+      [107] aaload
+      [108] iload v5
+      [110] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [113] goto +85 (target=198)
+      [116] iload v5
+      [118] iload v6
+      [120] ificmpne +66 (target=186)
+      [123] aload_1 v1
+      [124] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [127] iload_3 v3
+      [128] aaload
+      [129] iconst_0
+      [130] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [133] aload_1 v1
+      [134] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [137] iload v4
+      [139] aaload
+      [140] iload v5
+      [142] iload v6
+      [144] iadd
+      [145] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [148] iload v5
+      [150] iload v6
+      [152] iadd
+      [153] aload_1 v1
+      [154] getfield #83
+        - Fieldref [com/mok/game/goddess/MainActivity.n I]
+      [157] ificmpne +7 (target=164)
+      [160] aload_1 v1
+      [161] invokespecial #127
+        - Methodref [com/mok/game/goddess/MainActivity.g ()V]
+      [164] aload_1 v1
+      [165] iconst_1
+      [166] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [169] aload_1 v1
+      [170] iconst_0
+      [171] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [174] aload_1 v1
+      [175] iload v5
+      [177] iload v6
+      [179] iadd
+      [180] invokespecial #122
+        - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+      [183] goto +15 (target=198)
+      [186] aload_1 v1
+      [187] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [190] ifne +8 (target=198)
+      [193] aload_1 v1
+      [194] iconst_2
+      [195] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [198] iload v4
+      [200] istore_3 v3
+      [201] iinc v4, 1
+      [204] iload v4
+      [206] iload_2 v2
+      [207] aload_1 v1
+      [208] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [211] iconst_1
+      [212] isub
+      [213] iadd
+      [214] ificmple -150 (target=64)
+      [217] iload_2 v2
+      [218] aload_1 v1
+      [219] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [222] iadd
+      [223] istore_2 v2
+      [224] iload_2 v2
+      [225] aload_1 v1
+      [226] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [229] aload_1 v1
+      [230] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [233] iconst_1
+      [234] isub
+      [235] imul
+      [236] ificmple -182 (target=54)
+      [239] aload_0 v0
+      [240] invokespecial #124
+        - Methodref [com/mok/game/goddess/MainActivity.e ()V]
+      [243] aload_0 v0
+      [244] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [247] aload_0 v0
+      [248] invokespecial #125
+        - Methodref [com/mok/game/goddess/MainActivity.f ()V]
+      [251] return
+      [252] getstatic #93
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [255] ldc #22
+        - String [go left]
+      [257] invokevirtual #156
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [260] aload_0 v0
+      [261] dup
+      [262] astore_1 v1
+      [263] getfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [266] ifne +193 (target=459)
+      [269] aload_1 v1
+      [270] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [273] iconst_1
+      [274] isub
+      [275] istore_2 v2
+      [276] goto +173 (target=449)
+      [279] iload_2 v2
+      [280] istore_3 v3
+      [281] iload_2 v2
+      [282] iconst_1
+      [283] isub
+      [284] istore v4
+      [286] goto +143 (target=429)
+      [289] aload_1 v1
+      [290] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [293] iload_3 v3
+      [294] aaload
+      [295] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [298] istore v5
+      [300] aload_1 v1
+      [301] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [304] iload v4
+      [306] aaload
+      [307] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [310] dup
+      [311] istore v6
+      [313] ifne +28 (target=341)
+      [316] aload_1 v1
+      [317] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [320] iload_3 v3
+      [321] aaload
+      [322] iconst_0
+      [323] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [326] aload_1 v1
+      [327] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [330] iload v4
+      [332] aaload
+      [333] iload v5
+      [335] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [338] goto +85 (target=423)
+      [341] iload v5
+      [343] iload v6
+      [345] ificmpne +66 (target=411)
+      [348] aload_1 v1
+      [349] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [352] iload_3 v3
+      [353] aaload
+      [354] iconst_0
+      [355] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [358] aload_1 v1
+      [359] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [362] iload v4
+      [364] aaload
+      [365] iload v5
+      [367] iload v6
+      [369] iadd
+      [370] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [373] iload v5
+      [375] iload v6
+      [377] iadd
+      [378] aload_1 v1
+      [379] getfield #83
+        - Fieldref [com/mok/game/goddess/MainActivity.n I]
+      [382] ificmpne +7 (target=389)
+      [385] aload_1 v1
+      [386] invokespecial #127
+        - Methodref [com/mok/game/goddess/MainActivity.g ()V]
+      [389] aload_1 v1
+      [390] iconst_1
+      [391] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [394] aload_1 v1
+      [395] iconst_0
+      [396] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [399] aload_1 v1
+      [400] iload v5
+      [402] iload v6
+      [404] iadd
+      [405] invokespecial #122
+        - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+      [408] goto +15 (target=423)
+      [411] aload_1 v1
+      [412] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [415] ifne +8 (target=423)
+      [418] aload_1 v1
+      [419] iconst_1
+      [420] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [423] iload v4
+      [425] istore_3 v3
+      [426] iinc v4, -1
+      [429] iload v4
+      [431] iload_2 v2
+      [432] aload_1 v1
+      [433] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [436] iconst_1
+      [437] isub
+      [438] isub
+      [439] ificmpge -150 (target=289)
+      [442] iload_2 v2
+      [443] aload_1 v1
+      [444] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [447] iadd
+      [448] istore_2 v2
+      [449] iload_2 v2
+      [450] aload_1 v1
+      [451] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [454] iconst_1
+      [455] isub
+      [456] ificmple -177 (target=279)
+      [459] aload_0 v0
+      [460] invokespecial #124
+        - Methodref [com/mok/game/goddess/MainActivity.e ()V]
+      [463] aload_0 v0
+      [464] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [467] aload_0 v0
+      [468] invokespecial #125
+        - Methodref [com/mok/game/goddess/MainActivity.f ()V]
+      [471] return
+      [472] getstatic #93
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [475] ldc #21
+        - String [go bottom]
+      [477] invokevirtual #156
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [480] aload_0 v0
+      [481] dup
+      [482] astore_1 v1
+      [483] getfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [486] ifne +196 (target=682)
+      [489] iconst_0
+      [490] istore_2 v2
+      [491] goto +183 (target=674)
+      [494] iload_2 v2
+      [495] istore_3 v3
+      [496] iload_2 v2
+      [497] aload_1 v1
+      [498] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [501] iadd
+      [502] istore v4
+      [504] goto +149 (target=653)
+      [507] aload_1 v1
+      [508] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [511] iload_3 v3
+      [512] aaload
+      [513] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [516] istore v5
+      [518] aload_1 v1
+      [519] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [522] iload v4
+      [524] aaload
+      [525] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [528] dup
+      [529] istore v6
+      [531] ifne +28 (target=559)
+      [534] aload_1 v1
+      [535] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [538] iload_3 v3
+      [539] aaload
+      [540] iconst_0
+      [541] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [544] aload_1 v1
+      [545] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [548] iload v4
+      [550] aaload
+      [551] iload v5
+      [553] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [556] goto +85 (target=641)
+      [559] iload v5
+      [561] iload v6
+      [563] ificmpne +66 (target=629)
+      [566] aload_1 v1
+      [567] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [570] iload_3 v3
+      [571] aaload
+      [572] iconst_0
+      [573] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [576] aload_1 v1
+      [577] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [580] iload v4
+      [582] aaload
+      [583] iload v5
+      [585] iload v6
+      [587] iadd
+      [588] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [591] iload v5
+      [593] iload v6
+      [595] iadd
+      [596] aload_1 v1
+      [597] getfield #83
+        - Fieldref [com/mok/game/goddess/MainActivity.n I]
+      [600] ificmpne +7 (target=607)
+      [603] aload_1 v1
+      [604] invokespecial #127
+        - Methodref [com/mok/game/goddess/MainActivity.g ()V]
+      [607] aload_1 v1
+      [608] iconst_1
+      [609] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [612] aload_1 v1
+      [613] iconst_0
+      [614] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [617] aload_1 v1
+      [618] iload v5
+      [620] iload v6
+      [622] iadd
+      [623] invokespecial #122
+        - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+      [626] goto +15 (target=641)
+      [629] aload_1 v1
+      [630] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [633] ifne +8 (target=641)
+      [636] aload_1 v1
+      [637] iconst_4
+      [638] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [641] iload v4
+      [643] istore_3 v3
+      [644] iload v4
+      [646] aload_1 v1
+      [647] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [650] iadd
+      [651] istore v4
+      [653] iload v4
+      [655] iload_2 v2
+      [656] aload_1 v1
+      [657] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [660] aload_1 v1
+      [661] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [664] iconst_1
+      [665] isub
+      [666] imul
+      [667] iadd
+      [668] ificmple -161 (target=507)
+      [671] iinc v2, 1
+      [674] iload_2 v2
+      [675] aload_1 v1
+      [676] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [679] ificmplt -185 (target=494)
+      [682] aload_0 v0
+      [683] invokespecial #124
+        - Methodref [com/mok/game/goddess/MainActivity.e ()V]
+      [686] aload_0 v0
+      [687] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [690] aload_0 v0
+      [691] invokespecial #125
+        - Methodref [com/mok/game/goddess/MainActivity.f ()V]
+      [694] return
+      [695] getstatic #93
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [698] ldc #24
+        - String [go top]
+      [700] invokevirtual #156
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [703] aload_0 v0
+      [704] dup
+      [705] astore_1 v1
+      [706] getfield #86
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [709] ifne +206 (target=915)
+      [712] aload_1 v1
+      [713] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [716] aload_1 v1
+      [717] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [720] iconst_1
+      [721] isub
+      [722] imul
+      [723] istore_2 v2
+      [724] goto +183 (target=907)
+      [727] iload_2 v2
+      [728] istore_3 v3
+      [729] iload_2 v2
+      [730] aload_1 v1
+      [731] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [734] isub
+      [735] istore v4
+      [737] goto +149 (target=886)
+      [740] aload_1 v1
+      [741] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [744] iload_3 v3
+      [745] aaload
+      [746] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [749] istore v5
+      [751] aload_1 v1
+      [752] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [755] iload v4
+      [757] aaload
+      [758] invokevirtual #134
+        - Methodref [com/mok/game/goddess/a.a ()I]
+      [761] dup
+      [762] istore v6
+      [764] ifne +28 (target=792)
+      [767] aload_1 v1
+      [768] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [771] iload_3 v3
+      [772] aaload
+      [773] iconst_0
+      [774] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [777] aload_1 v1
+      [778] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [781] iload v4
+      [783] aaload
+      [784] iload v5
+      [786] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [789] goto +85 (target=874)
+      [792] iload v5
+      [794] iload v6
+      [796] ificmpne +66 (target=862)
+      [799] aload_1 v1
+      [800] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [803] iload_3 v3
+      [804] aaload
+      [805] iconst_0
+      [806] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [809] aload_1 v1
+      [810] getfield #79
+        - Fieldref [com/mok/game/goddess/MainActivity.j [Lcom/mok/game/goddess/a;]
+      [813] iload v4
+      [815] aaload
+      [816] iload v5
+      [818] iload v6
+      [820] iadd
+      [821] invokevirtual #135
+        - Methodref [com/mok/game/goddess/a.a (I)V]
+      [824] iload v5
+      [826] iload v6
+      [828] iadd
+      [829] aload_1 v1
+      [830] getfield #83
+        - Fieldref [com/mok/game/goddess/MainActivity.n I]
+      [833] ificmpne +7 (target=840)
+      [836] aload_1 v1
+      [837] invokespecial #127
+        - Methodref [com/mok/game/goddess/MainActivity.g ()V]
+      [840] aload_1 v1
+      [841] iconst_1
+      [842] putfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [845] aload_1 v1
+      [846] iconst_0
+      [847] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [850] aload_1 v1
+      [851] iload v5
+      [853] iload v6
+      [855] iadd
+      [856] invokespecial #122
+        - Methodref [com/mok/game/goddess/MainActivity.c (I)V]
+      [859] goto +15 (target=874)
+      [862] aload_1 v1
+      [863] getfield #80
+        - Fieldref [com/mok/game/goddess/MainActivity.k Z]
+      [866] ifne +8 (target=874)
+      [869] aload_1 v1
+      [870] iconst_3
+      [871] invokespecial #120
+        - Methodref [com/mok/game/goddess/MainActivity.b (I)V]
+      [874] iload v4
+      [876] istore_3 v3
+      [877] iload v4
+      [879] aload_1 v1
+      [880] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [883] isub
+      [884] istore v4
+      [886] iload v4
+      [888] iload_2 v2
+      [889] aload_1 v1
+      [890] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [893] aload_1 v1
+      [894] getfield #82
+        - Fieldref [com/mok/game/goddess/MainActivity.m I]
+      [897] iconst_1
+      [898] isub
+      [899] imul
+      [900] isub
+      [901] ificmpge -161 (target=740)
+      [904] iinc v2, 1
+      [907] iload_2 v2
+      [908] aload_1 v1
+      [909] getfield #81
+        - Fieldref [com/mok/game/goddess/MainActivity.l I]
+      [912] ificmplt -185 (target=727)
+      [915] aload_0 v0
+      [916] invokespecial #124
+        - Methodref [com/mok/game/goddess/MainActivity.e ()V]
+      [919] aload_0 v0
+      [920] invokespecial #123
+        - Methodref [com/mok/game/goddess/MainActivity.d ()V]
+      [923] aload_0 v0
+      [924] invokespecial #125
+        - Methodref [com/mok/game/goddess/MainActivity.f ()V]
+      [927] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 41):
+        - [32] Var: -1, Stack: (empty)
+        - [54] Var: ...[a:com/mok/game/goddess/MainActivity][i], Stack: (empty)
+        - [64] Var: ...[i][i], Stack: (empty)
+        - [116] Var: ...[i][i], Stack: (empty)
+        - [164] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][T][i][i][i], Stack: 
+        - [186] Var: -2, Stack: (empty)
+        - [198] Var: ..., Stack: (empty)
+        - [204] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][i][i], Stack: 
+        - [224] Var: -2, Stack: (empty)
+        - [239] Var: -2, Stack: (empty)
+        - [252] Var: ..., Stack: (empty)
+        - [279] Var: ...[a:com/mok/game/goddess/MainActivity][i], Stack: (empty)
+        - [289] Var: ...[i][i], Stack: (empty)
+        - [341] Var: ...[i][i], Stack: (empty)
+        - [389] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][T][i][i][i], Stack: 
+        - [411] Var: -2, Stack: (empty)
+        - [423] Var: ..., Stack: (empty)
+        - [429] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][i][i], Stack: 
+        - [449] Var: -2, Stack: (empty)
+        - [459] Var: -2, Stack: (empty)
+        - [472] Var: ..., Stack: (empty)
+        - [494] Var: ...[a:com/mok/game/goddess/MainActivity][i], Stack: (empty)
+        - [507] Var: ...[i][i], Stack: (empty)
+        - [559] Var: ...[i][i], Stack: (empty)
+        - [607] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][T][i][i][i], Stack: 
+        - [629] Var: -2, Stack: (empty)
+        - [641] Var: ..., Stack: (empty)
+        - [653] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][i][i], Stack: 
+        - [674] Var: -2, Stack: (empty)
+        - [682] Var: -2, Stack: (empty)
+        - [695] Var: ..., Stack: (empty)
+        - [727] Var: ...[a:com/mok/game/goddess/MainActivity][i], Stack: (empty)
+        - [740] Var: ...[i][i], Stack: (empty)
+        - [792] Var: ...[i][i], Stack: (empty)
+        - [840] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][T][i][i][i], Stack: 
+        - [862] Var: -2, Stack: (empty)
+        - [874] Var: ..., Stack: (empty)
+        - [886] Var: [a:com/mok/game/goddess/MainActivity][a:com/mok/game/goddess/MainActivity][i][i][i], Stack: 
+        - [907] Var: -2, Stack: (empty)
+        - [915] Var: -2, Stack: (empty)
+        - [927] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/b
+  Superclass:    android/view/GestureDetector$SimpleOnGestureListener
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.mok.game.goddess.b extends android.view.GestureDetector$SimpleOnGestureListener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 66):
+  - String [x=]
+  - String [y=]
+  - Class [android/view/GestureDetector$SimpleOnGestureListener]
+  - Class [android/view/MotionEvent]
+  - Class [com/mok/game/goddess/MainActivity]
+  - Class [com/mok/game/goddess/b]
+  - Class [java/io/PrintStream]
+  - Class [java/lang/Math]
+  - Class [java/lang/StringBuilder]
+  - Class [java/lang/System]
+  - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+  - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+  - Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+  - Methodref [android/view/MotionEvent.getX ()F]
+  - Methodref [android/view/MotionEvent.getY ()F]
+  - Methodref [com/mok/game/goddess/MainActivity.a (I)V]
+  - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+  - Methodref [java/lang/Math.abs (F)F]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (F)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - NameAndType [<init> ()V]
+  - NameAndType [<init> (Ljava/lang/String;)V]
+  - NameAndType [a (I)V]
+  - NameAndType [a Lcom/mok/game/goddess/MainActivity;]
+  - NameAndType [abs (F)F]
+  - NameAndType [append (F)Ljava/lang/StringBuilder;]
+  - NameAndType [getX ()F]
+  - NameAndType [getY ()F]
+  - NameAndType [out Ljava/io/PrintStream;]
+  - NameAndType [println (Ljava/lang/String;)V]
+  - NameAndType [toString ()Ljava/lang/String;]
+  - Utf8 [()F]
+  - Utf8 [()Ljava/lang/String;]
+  - Utf8 [()V]
+  - Utf8 [(F)F]
+  - Utf8 [(F)Ljava/lang/StringBuilder;]
+  - Utf8 [(I)V]
+  - Utf8 [(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z]
+  - Utf8 [(Lcom/mok/game/goddess/MainActivity;)V]
+  - Utf8 [(Ljava/lang/String;)V]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [Lcom/mok/game/goddess/MainActivity;]
+  - Utf8 [Ljava/io/PrintStream;]
+  - Utf8 [StackMapTable]
+  - Utf8 [a]
+  - Utf8 [abs]
+  - Utf8 [android/view/GestureDetector$SimpleOnGestureListener]
+  - Utf8 [android/view/MotionEvent]
+  - Utf8 [append]
+  - Utf8 [com/mok/game/goddess/MainActivity]
+  - Utf8 [com/mok/game/goddess/b]
+  - Utf8 [getX]
+  - Utf8 [getY]
+  - Utf8 [java/io/PrintStream]
+  - Utf8 [java/lang/Math]
+  - Utf8 [java/lang/StringBuilder]
+  - Utf8 [java/lang/System]
+  - Utf8 [onFling]
+  - Utf8 [out]
+  - Utf8 [println]
+  - Utf8 [toString]
+  - Utf8 [x=]
+  - Utf8 [y=]
+
+Fields (count = 1):
+  - Field:        a Lcom/mok/game/goddess/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.mok.game.goddess.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/mok/game/goddess/MainActivity;)V
+    Access flags: 0x0
+      = b(com.mok.game.goddess.MainActivity)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #13
+        - Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
+    Access flags: 0x11
+      = public final boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 143, locals = 5, stack = 4):
+      [0] aload_2 v2
+      [1] invokevirtual #14
+        - Methodref [android/view/MotionEvent.getX ()F]
+      [4] aload_1 v1
+      [5] invokevirtual #14
+        - Methodref [android/view/MotionEvent.getX ()F]
+      [8] fsub
+      [9] fstore_3 v3
+      [10] aload_2 v2
+      [11] invokevirtual #15
+        - Methodref [android/view/MotionEvent.getY ()F]
+      [14] aload_1 v1
+      [15] invokevirtual #15
+        - Methodref [android/view/MotionEvent.getY ()F]
+      [18] fsub
+      [19] fstore_1 v1
+      [20] getstatic #12
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [23] new #9
+        - Class [java/lang/StringBuilder]
+      [26] dup
+      [27] ldc #1
+        - String [x=]
+      [29] invokespecial #19
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [32] fload_3 v3
+      [33] invokevirtual #20
+        - Methodref [java/lang/StringBuilder.append (F)Ljava/lang/StringBuilder;]
+      [36] invokevirtual #21
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [39] invokevirtual #17
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [42] getstatic #12
+        - Fieldref [java/lang/System.out Ljava/io/PrintStream;]
+      [45] new #9
+        - Class [java/lang/StringBuilder]
+      [48] dup
+      [49] ldc #2
+        - String [y=]
+      [51] invokespecial #19
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [54] fload_1 v1
+      [55] invokevirtual #20
+        - Methodref [java/lang/StringBuilder.append (F)Ljava/lang/StringBuilder;]
+      [58] invokevirtual #21
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [61] invokevirtual #17
+        - Methodref [java/io/PrintStream.println (Ljava/lang/String;)V]
+      [64] fload_3 v3
+      [65] invokestatic #18
+        - Methodref [java/lang/Math.abs (F)F]
+      [68] fload_1 v1
+      [69] invokestatic #18
+        - Methodref [java/lang/Math.abs (F)F]
+      [72] fcmpl
+      [73] ifle +37 (target=110)
+      [76] fload_3 v3
+      [77] fconst_0
+      [78] fcmpl
+      [79] ifle +14 (target=93)
+      [82] aload_0 v0
+      [83] getfield #11
+        - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+      [86] iconst_0
+      [87] invokevirtual #16
+        - Methodref [com/mok/game/goddess/MainActivity.a (I)V]
+      [90] goto +51 (target=141)
+      [93] fload_3 v3
+      [94] fconst_0
+      [95] fcmpg
+      [96] ifge +45 (target=141)
+      [99] aload_0 v0
+      [100] getfield #11
+        - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+      [103] iconst_1
+      [104] invokevirtual #16
+        - Methodref [com/mok/game/goddess/MainActivity.a (I)V]
+      [107] goto +34 (target=141)
+      [110] fload_1 v1
+      [111] fconst_0
+      [112] fcmpl
+      [113] ifle +14 (target=127)
+      [116] aload_0 v0
+      [117] getfield #11
+        - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+      [120] iconst_3
+      [121] invokevirtual #16
+        - Methodref [com/mok/game/goddess/MainActivity.a (I)V]
+      [124] goto +17 (target=141)
+      [127] fload_1 v1
+      [128] fconst_0
+      [129] fcmpg
+      [130] ifge +11 (target=141)
+      [133] aload_0 v0
+      [134] getfield #11
+        - Fieldref [com/mok/game/goddess/b.a Lcom/mok/game/goddess/MainActivity;]
+      [137] iconst_2
+      [138] invokevirtual #16
+        - Methodref [com/mok/game/goddess/MainActivity.a (I)V]
+      [141] iconst_1
+      [142] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 4):
+        - [93] Var: [a:com/mok/game/goddess/b][T][T][f], Stack: 
+        - [110] Var: [a:com/mok/game/goddess/b][f], Stack: 
+        - [127] Var: ..., Stack: (empty)
+        - [141] Var: -2, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.mok.game.goddess.c extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 33):
+  - Class [android/view/View]
+  - Class [android/view/View$OnClickListener]
+  - Class [com/mok/game/goddess/MainActivity]
+  - Class [com/mok/game/goddess/c]
+  - Class [java/lang/Object]
+  - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+  - Fieldref [com/mok/game/goddess/c.a Lcom/mok/game/goddess/MainActivity;]
+  - Methodref [com/mok/game/goddess/MainActivity.a ()V]
+  - Methodref [com/mok/game/goddess/MainActivity.b ()V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - NameAndType [<init> ()V]
+  - NameAndType [a ()V]
+  - NameAndType [a Lcom/mok/game/goddess/MainActivity;]
+  - NameAndType [b ()V]
+  - NameAndType [q Z]
+  - Utf8 [()V]
+  - Utf8 [(Landroid/view/View;)V]
+  - Utf8 [(Lcom/mok/game/goddess/MainActivity;)V]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [Lcom/mok/game/goddess/MainActivity;]
+  - Utf8 [StackMapTable]
+  - Utf8 [Z]
+  - Utf8 [a]
+  - Utf8 [android/view/View]
+  - Utf8 [android/view/View$OnClickListener]
+  - Utf8 [b]
+  - Utf8 [com/mok/game/goddess/MainActivity]
+  - Utf8 [com/mok/game/goddess/c]
+  - Utf8 [java/lang/Object]
+  - Utf8 [onClick]
+  - Utf8 [q]
+
+Fields (count = 1):
+  - Field:        a Lcom/mok/game/goddess/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.mok.game.goddess.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/mok/game/goddess/MainActivity;)V
+    Access flags: 0x0
+      = c(com.mok.game.goddess.MainActivity)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        - Fieldref [com/mok/game/goddess/c.a Lcom/mok/game/goddess/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #10
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x11
+      = public final void onClick(android.view.View)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 26, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #7
+        - Fieldref [com/mok/game/goddess/c.a Lcom/mok/game/goddess/MainActivity;]
+      [4] getfield #6
+        - Fieldref [com/mok/game/goddess/MainActivity.q Z]
+      [7] ifeq +11 (target=18)
+      [10] aload_0 v0
+      [11] getfield #7
+        - Fieldref [com/mok/game/goddess/c.a Lcom/mok/game/goddess/MainActivity;]
+      [14] invokevirtual #8
+        - Methodref [com/mok/game/goddess/MainActivity.a ()V]
+      [17] return
+      [18] aload_0 v0
+      [19] getfield #7
+        - Fieldref [com/mok/game/goddess/c.a Lcom/mok/game/goddess/MainActivity;]
+      [22] invokevirtual #9
+        - Methodref [com/mok/game/goddess/MainActivity.b ()V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      - Stack map table attribute (count = 1):
+        - [18] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.mok.game.goddess.d extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 24):
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [com/mok/game/goddess/d]
+  - Class [java/lang/Object]
+  - Fieldref [com/mok/game/goddess/d.a Lcom/mok/game/goddess/MainActivity;]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  - NameAndType [<init> ()V]
+  - NameAndType [a Lcom/mok/game/goddess/MainActivity;]
+  - NameAndType [dismiss ()V]
+  - Utf8 [()V]
+  - Utf8 [(Landroid/content/DialogInterface;I)V]
+  - Utf8 [(Lcom/mok/game/goddess/MainActivity;)V]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [Lcom/mok/game/goddess/MainActivity;]
+  - Utf8 [a]
+  - Utf8 [android/content/DialogInterface]
+  - Utf8 [android/content/DialogInterface$OnClickListener]
+  - Utf8 [com/mok/game/goddess/d]
+  - Utf8 [dismiss]
+  - Utf8 [java/lang/Object]
+  - Utf8 [onClick]
+
+Fields (count = 1):
+  - Field:        a Lcom/mok/game/goddess/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.mok.game.goddess.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/mok/game/goddess/MainActivity;)V
+    Access flags: 0x0
+      = d(com.mok.game.goddess.MainActivity)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        - Fieldref [com/mok/game/goddess/d.a Lcom/mok/game/goddess/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #6
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 7, locals = 3, stack = 1):
+      [0] aload_1 v1
+      [1] invokeinterface #7
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
+- Program class: com/mok/game/goddess/e
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.mok.game.goddess.e extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 28):
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [com/mok/game/goddess/MainActivity]
+  - Class [com/mok/game/goddess/e]
+  - Class [java/lang/Object]
+  - Fieldref [com/mok/game/goddess/e.a Lcom/mok/game/goddess/MainActivity;]
+  - Methodref [com/mok/game/goddess/MainActivity.a ()V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  - NameAndType [<init> ()V]
+  - NameAndType [a ()V]
+  - NameAndType [a Lcom/mok/game/goddess/MainActivity;]
+  - NameAndType [dismiss ()V]
+  - Utf8 [()V]
+  - Utf8 [(Landroid/content/DialogInterface;I)V]
+  - Utf8 [(Lcom/mok/game/goddess/MainActivity;)V]
+  - Utf8 [<init>]
+  - Utf8 [Code]
+  - Utf8 [Lcom/mok/game/goddess/MainActivity;]
+  - Utf8 [a]
+  - Utf8 [android/content/DialogInterface]
+  - Utf8 [android/content/DialogInterface$OnClickListener]
+  - Utf8 [com/mok/game/goddess/MainActivity]
+  - Utf8 [com/mok/game/goddess/e]
+  - Utf8 [dismiss]
+  - Utf8 [java/lang/Object]
+  - Utf8 [onClick]
+
+Fields (count = 1):
+  - Field:        a Lcom/mok/game/goddess/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.mok.game.goddess.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/mok/game/goddess/MainActivity;)V
+    Access flags: 0x0
+      = e(com.mok.game.goddess.MainActivity)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        - Fieldref [com/mok/game/goddess/e.a Lcom/mok/game/goddess/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #8
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    - Code attribute instructions (code length = 14, locals = 3, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #6
+        - Fieldref [com/mok/game/goddess/e.a Lcom/mok/game/goddess/MainActivity;]
+      [4] invokevirtual #7
+        - Methodref [com/mok/game/goddess/MainActivity.a ()V]
+      [7] aload_1 v1
+      [8] invokeinterface #9
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

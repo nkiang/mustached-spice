@@ -3,6 +3,11 @@ package com.mok.game.goddess;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.Charset;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -43,13 +48,14 @@ public class MainActivity extends Activity {
 	Block block;
 
 	boolean numFlag;	//is fill the container full
-	int moveFlag;
+//	int moveFlag;
 	int numTotal = 25;
 	int numSqrt = 5;
 	int endStore = 8192;
 	int blockWidth;
 	int currentScore = 0;
 	boolean isGameOver = false;
+	boolean leftFlag = true, rightFlag = true, upFlag = true, downFlag = true;
 
 	//** Called when the activity is first created. **//
 	@Override
@@ -73,7 +79,8 @@ public class MainActivity extends Activity {
 	private void setContent(){
 		//init data
 		numFlag = true;
-		moveFlag = 0;
+//		moveFlag = 0;
+		leftFlag = true; rightFlag = true; upFlag = true; downFlag = true;
 		//container layout
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 //		params.width = GridLayout.LayoutParams.MATCH_PARENT;
@@ -152,6 +159,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void upBlock() {
+		if(isGameOver)
+			return;
 
 		for (int i = numSqrt*(numSqrt-1); i < numTotal; i++) {
 			int index = i;
@@ -167,10 +176,12 @@ public class MainActivity extends Activity {
 						if (valueI + valueJ == endStore)
 							win();
 						numFlag = true;
-						moveFlag = 0;
+//						moveFlag = 0;
+						setMoveFlag(0);
 						setScore(valueI+valueJ);
 					} else if (numFlag == false)
-						moveFlag += 1;
+//						moveFlag += 1;
+						setMoveFlag(3);
 				}
 				index = j;
 			}
@@ -179,6 +190,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void downBlock() {
+		if(isGameOver)
+			return;
 
 		for (int i = 0; i < numSqrt; i++) {
 			int index = i;
@@ -194,10 +207,12 @@ public class MainActivity extends Activity {
 						if (valueI + valueJ == endStore)
 							win();
 						numFlag = true;
-						moveFlag = 0;
+//						moveFlag = 0;
+						setMoveFlag(0);
 						setScore(valueI+valueJ);
 					} else if (numFlag == false)
-						moveFlag += 1;
+//						moveFlag += 1;
+						setMoveFlag(4);
 				}
 				index = j;
 			}
@@ -206,6 +221,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void rightBlock() {
+		if(isGameOver)
+			return;
 
 		for (int i = 0; i <= numSqrt*(numSqrt-1); i += numSqrt) {
 			int index = i;
@@ -221,10 +238,12 @@ public class MainActivity extends Activity {
 						if (valueI + valueJ == endStore)
 							win();
 						numFlag = true;
-						moveFlag = 0;
+//						moveFlag = 0;
+						setMoveFlag(0);
 						setScore(valueI+valueJ);
 					} else if (numFlag == false)
-						moveFlag += 1;
+//						moveFlag += 1;
+						setMoveFlag(2);
 				}
 				index = j;
 			}
@@ -233,6 +252,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void leftBlock() {
+		if(isGameOver)
+			return;
 
 		for (int i = (numSqrt-1); i <= (numTotal-1); i += numSqrt) {
 			int index = i;
@@ -248,36 +269,46 @@ public class MainActivity extends Activity {
 						if (valueI + valueJ == endStore)
 							win();
 						numFlag = true;
-						moveFlag = 0;
+//						moveFlag = 0;
+						setMoveFlag(0);
 						setScore(valueI+valueJ);
 					} else if (numFlag == false)
-						moveFlag += 1;
+//						moveFlag += 1;
+						setMoveFlag(1);
 				}
 				index = j;
 			}
 		}
-
+	}
+	
+	public void setMoveFlag(int num){
+		switch(num){
+		case 0:
+			leftFlag = true; rightFlag = true; upFlag = true; downFlag = true;
+			break;
+		case 1:
+			leftFlag = false;
+			break;
+		case 2:
+			rightFlag = false;
+			break;
+		case 3:
+			upFlag = false;
+			break;
+		case 4:
+			downFlag = false;
+			break;
+		}
 	}
 	
 	public void over() {
-		if (!numFlag && moveFlag >= 36) {
-			blocks[numSqrt].setValue(0);
-			blocks[numSqrt+1].setValue(0);
+//		if (!numFlag && moveFlag >= 36) {
+		if (!numFlag && !upFlag && !downFlag && !leftFlag && !rightFlag ) {
 			blocks[numSqrt+2].setValue(0);
-			blocks[numSqrt+3].setValue(0);
-			blocks[numSqrt*2].setValue(0);
-			blocks[numSqrt*2+1].setValue(0);
 			blocks[numSqrt*2+2].setValue(0);
-			blocks[numSqrt*2+3].setValue(0);
 
-			blocks[numSqrt].setText("G");
-			blocks[numSqrt+1].setText("A");
-			blocks[numSqrt+2].setText("M");
-			blocks[numSqrt+3].setText("E");
-			blocks[numSqrt*2].setText("O");
-			blocks[numSqrt*2+1].setText("V");
-			blocks[numSqrt*2+2].setText("E");
-			blocks[numSqrt*2+3].setText("R");
+			blocks[numSqrt+2].setText("GAME");
+			blocks[numSqrt*2+2].setText("OVER");
 
 			main_start.setText(R.string.start);
 			setHighScore();
@@ -287,19 +318,11 @@ public class MainActivity extends Activity {
     
 	public void win() {
 		
-		blocks[0].setValue(0);
-		blocks[1].setValue(0);
-		blocks[2].setValue(0);
-		blocks[numTotal-3].setValue(0);
-		blocks[numTotal-2].setValue(0);
-		blocks[numTotal-1].setValue(0);
+		blocks[numSqrt+2].setValue(0);
+		blocks[numSqrt*2+2].setValue(0);
 
-		blocks[0].setText("Y");
-		blocks[1].setText("O");
-		blocks[2].setText("U");
-		blocks[numTotal-3].setText("W");
-		blocks[numTotal-2].setText("I");
-		blocks[numTotal-1].setText("N");
+		blocks[numSqrt+2].setText("YOU");
+		blocks[numSqrt*2+2].setText("WIN");
 		
 		main_start.setText(R.string.start);
 		setHighScore();
@@ -307,7 +330,8 @@ public class MainActivity extends Activity {
     public void reStart(){
     	isGameOver = false;
     	numFlag=true;
-		moveFlag=0;
+//		moveFlag=0;
+    	setMoveFlag(0);
 		for(int i=0;i<numTotal;i++)
 			blocks[i].setValue(0);
     	for (int i = 0; i < 2; i++)
@@ -324,26 +348,52 @@ public class MainActivity extends Activity {
 	}
 	private void setHighScore(){
 		String _highSocre = (String) main_highest_score.getText();
+		_highSocre = _highSocre.trim();
 		String _currScore = (String) main_score.getText();
 		if(_highSocre.equals("0") || Integer.parseInt(_highSocre) < Integer.parseInt(_currScore) ){
 			main_highest_score.setText(_currScore);
 			
 			String fileName = getFilesDir() + "/2048";
 			String message = _currScore;
+			FileOutputStream fout = null;
+			OutputStreamWriter osw = null;
 			try{
 				File file = new File(fileName);
 				if(file.exists())
 					file.delete();
 				file.createNewFile();
-		        FileOutputStream fout = openFileOutput(fileName, MODE_PRIVATE);
 		        byte [] bytes = message.getBytes(); 
-		        fout.write(bytes); 
-		        fout.close(); 
+//		        FileOutputStream fout = openFileOutput(fileName, MODE_PRIVATE);
+//		        fout.write(bytes); 
+//		        fout.close(); 
+		        fout = new FileOutputStream(file, true); //true表示追加到已存在的文件
+		        osw = new OutputStreamWriter(fout);
+                osw.write(getChars(bytes));
+                osw.flush();
 		    } 
 		    catch(Exception e){ 
 		        e.printStackTrace(); 
 		    } 
+			finally{
+				 try {
+					osw.close();
+					fout.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 		}
+	}
+	
+	private char[] getChars (byte[] bytes) {
+	      Charset cs = Charset.forName ("UTF-8");
+	      ByteBuffer bb = ByteBuffer.allocate (bytes.length);
+	      bb.put (bytes);
+	                 bb.flip ();
+	       CharBuffer cb = cs.decode (bb);
+	  
+	   return cb.array();
 	}
     
     private void setBtnClick(){
